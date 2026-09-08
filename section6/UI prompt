@@ -1,0 +1,45 @@
+Add the following to my existing Next.js app. Keep the current landing page, hero section, and background animation exactly as they are — do not modify or remove them. Build these as new pages/routes that share the same design language (dark theme, same fonts, same accent colors).
+
+GLOBAL STYLE
+- Dark theme throughout the app (post-login), Obsidian-graph-view inspired: near-black canvas background, muted gray-blue UI chrome, one accent color for highlights (amber or teal), subtle glow on active/selected elements.
+- Use shadcn/ui components + Tailwind. Keep it feeling like a serious investigator/analyst tool, not a playful consumer app — sharp corners or very slight rounding, no bubbly gradients, restrained motion.
+
+1. LOGIN PAGE (/login)
+- Centered card on the dark background (reuse the existing background animation behind it).
+- Fields: "Investigator ID" (text) and "Password" (password), a "Sign In" button, and a small "Access is logged and monitored" disclaimer line for flavor/realism.
+- No real auth needed — on submit, just route to /dashboard. Include a loading spinner state on the button.
+
+2. DASHBOARD SHELL (/dashboard)
+- Left sidebar: nav items — Graph View, Reports, Audit Log, Settings (Graph View is the default/active one).
+- Top bar: search input ("Search entities..."), and a row of action buttons:
+  - "Verify Integrity" — primary button, shows a shield icon; on click, simulate a check and flip to a green "Verified ✓" badge (include a rare/toggleable red "Tampered ✗" state for demo purposes).
+  - "Highlight Top Players" — toggles a highlighted state on the highest-centrality nodes in the graph (glow/enlarge them, dim the rest).
+  - "Refresh Data" — icon button with a spin animation on click.
+  - "Export Report" — downloads/triggers a mock PDF export action.
+  - "Clear Selection" — resets any selected node/highlight state.
+- All buttons are functional against mock local state (no backend needed yet), just wire up the UI interactions.
+
+3. GRAPH VIEW (main panel of /dashboard)
+- Full-bleed force-directed network graph on a dark canvas, Obsidian-style: circular nodes connected by thin curved/straight edges, physics-based layout that gently settles.
+- Use react-force-graph-2d (or vis-network) with mock data: ~30-40 nodes representing people/locations/phone numbers/organizations, edges representing co-occurrence or shared-attribute links.
+- Node size = degree centrality (bigger = more connections). Node color = entity type (person/location/org/phone-number — use a small legend in a corner).
+- Hovering a node shows a tooltip with name + type. Clicking a node opens the Person Detail Panel (below) and dims/fades unconnected nodes to spotlight that node's neighborhood.
+- Support pan/zoom/drag like Obsidian's graph view. Include a small floating control (zoom +/-, reset view).
+
+4. PERSON / ENTITY DETAIL PANEL
+- A slide-in drawer/tab from the right side (or bottom sheet on mobile) that opens when a node is clicked.
+- Contents:
+  - Entity name, type, and a risk/priority badge (e.g. "Key Player" if centrality is high).
+  - Centrality scores (degree + betweenness) shown as small stat cards or bars.
+  - "Connections" list — the other entities this node links to, each clickable to jump the graph focus to them.
+  - "Linked Records" — mock list of source documents (FIR #, CDR excerpt, report snippet) this entity appeared in.
+  - A close button (X) that also clears the graph highlight/dim state.
+
+5. AUDIT LOG PAGE (/dashboard/audit-log)
+- Simple table/list view: timestamp, action ("Flagged Connection: X–Y", "Identified Key Player: Z"), and a hash value (truncated, monospace font).
+- A "Verify Chain Integrity" button at the top that re-runs the same verify animation/badge as the dashboard toolbar.
+
+DATA
+- Use realistic mock JSON for the graph (names, phone numbers, locations) structured like a planted criminal network: one clear high-centrality "kingpin" node, a handful of mid-tier "lieutenant" nodes, several low-degree "associate" nodes, and 1-2 isolated "red herring" nodes with no real connections — so the demo visually tells its own story.
+
+Keep everything responsive and make sure the graph view still looks good on a laptop screen at typical presentation resolution (this will be used in a live demo).
