@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d12" for="edge" attr.name="details" attr.type="long"/>
+<key id="d11" for="edge" attr.name="edge_types" attr.type="string"/>
+<key id="d10" for="edge" attr.name="shared_location" attr.type="long"/>
+<key id="d9" for="edge" attr.name="shared_vehicle" attr.type="long"/>
+<key id="d8" for="edge" attr.name="shared_phone" attr.type="long"/>
+<key id="d7" for="edge" attr.name="cdr_call" attr.type="long"/>
+<key id="d6" for="edge" attr.name="co_occurrence" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="doc_count" attr.type="long"/>
+<key id="d3" for="node" attr.name="city" attr.type="string"/>
+<key id="d2" for="node" attr.name="phone" attr.type="string"/>
+<key id="d1" for="node" attr.name="role" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Arjun Malhotra">
+  <data key="d0">PERSON</data>
+  <data key="d1">Key Person</data>
+  <data key="d2">9000001001</data>
+  <data key="d3">Howrah</data>
+  <data key="d4">26</data>
+</node>
+<node id="Ravi Sharma">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001002</data>
+  <data key="d3">Kolkata</data>
+  <data key="d4">16</data>
+</node>
+<node id="Nitin Roy">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001005</data>
+  <data key="d3">Siliguri</data>
+  <data key="d4">12</data>
+</node>
+<node id="Vikram Das">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001003</data>
+  <data key="d3">Asansol</data>
+  <data key="d4">17</data>
+</node>
+<node id="Amit Verma">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001006</data>
+  <data key="d3">Durgapur</data>
+  <data key="d4">16</data>
+</node>
+<node id="Sameer Khan">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001004</data>
+  <data key="d3">Siliguri</data>
+  <data key="d4">19</data>
+</node>
+<node id="Suresh Yadav">
+  <data key="d0">PERSON</data>
+  <data key="d1">Associate</data>
+  <data key="d2">9000001007</data>
+  <data key="d3">Howrah</data>
+  <data key="d4">8</data>
+</node>
+<node id="Rahul Sen">
+  <data key="d0">PERSON</data>
+  <data key="d1">Unrelated</data>
+  <data key="d2">9000001008</data>
+  <data key="d3">Howrah</data>
+  <data key="d4">2</data>
+</node>
+<node id="Priya Mehta">
+  <data key="d0">PERSON</data>
+  <data key="d1">Unrelated</data>
+  <data key="d2">9000001009</data>
+  <data key="d3">Delhi</data>
+  <data key="d4">2</data>
+</node>
+<node id="Ankit Bose">
+  <data key="d0">PERSON</data>
+  <data key="d1">Unrelated</data>
+  <data key="d2">9000001010</data>
+  <data key="d3">Kolkata</data>
+  <data key="d4">2</data>
+</node>
+<edge source="Arjun Malhotra" target="Ravi Sharma">
+  <data key="d5">17.5</data>
+  <data key="d6">2</data>
+  <data key="d7">3</data>
+  <data key="d8">3</data>
+  <data key="d9">2</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_vehicle</data>
+  <data key="d12">10</data>
+</edge>
+<edge source="Arjun Malhotra" target="Vikram Das">
+  <data key="d5">14.0</data>
+  <data key="d6">2</data>
+  <data key="d7">3</data>
+  <data key="d8">3</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_location</data>
+  <data key="d12">9</data>
+</edge>
+<edge source="Arjun Malhotra" target="Sameer Khan">
+  <data key="d5">16.5</data>
+  <data key="d6">3</data>
+  <data key="d7">3</data>
+  <data key="d8">4</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_location</data>
+  <data key="d12">11</data>
+</edge>
+<edge source="Arjun Malhotra" target="Suresh Yadav">
+  <data key="d5">8.5</data>
+  <data key="d6">3</data>
+  <data key="d7">0</data>
+  <data key="d8">2</data>
+  <data key="d9">1</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence,shared_phone,shared_vehicle</data>
+  <data key="d12">6</data>
+</edge>
+<edge source="Arjun Malhotra" target="Amit Verma">
+  <data key="d5">16.0</data>
+  <data key="d6">2</data>
+  <data key="d7">2</data>
+  <data key="d8">4</data>
+  <data key="d9">1</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_vehicle,shared_location</data>
+  <data key="d12">10</data>
+</edge>
+<edge source="Arjun Malhotra" target="Rahul Sen">
+  <data key="d5">5.0</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d8">2</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">cdr_call,shared_phone</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Arjun Malhotra" target="Priya Mehta">
+  <data key="d5">5.0</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d8">2</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">cdr_call,shared_phone</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Arjun Malhotra" target="Ankit Bose">
+  <data key="d5">5.0</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d8">2</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">cdr_call,shared_phone</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Arjun Malhotra" target="Nitin Roy">
+  <data key="d5">5.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">2</data>
+  <data key="d9">1</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone,shared_vehicle</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Ravi Sharma" target="Nitin Roy">
+  <data key="d5">17.0</data>
+  <data key="d6">2</data>
+  <data key="d7">4</data>
+  <data key="d8">3</data>
+  <data key="d9">1</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_vehicle</data>
+  <data key="d12">10</data>
+</edge>
+<edge source="Ravi Sharma" target="Vikram Das">
+  <data key="d5">2.5</data>
+  <data key="d6">1</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence,shared_phone</data>
+  <data key="d12">2</data>
+</edge>
+<edge source="Ravi Sharma" target="Sameer Khan">
+  <data key="d5">12.0</data>
+  <data key="d6">0</data>
+  <data key="d7">3</data>
+  <data key="d8">4</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">cdr_call,shared_phone</data>
+  <data key="d12">7</data>
+</edge>
+<edge source="Ravi Sharma" target="Amit Verma">
+  <data key="d5">5.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">2</data>
+  <data key="d9">1</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone,shared_vehicle</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Ravi Sharma" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Ravi Sharma" target="Priya Mehta">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Ravi Sharma" target="Rahul Sen">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Ravi Sharma" target="Suresh Yadav">
+  <data key="d5">4.0</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">1</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone,shared_vehicle</data>
+  <data key="d12">2</data>
+</edge>
+<edge source="Nitin Roy" target="Amit Verma">
+  <data key="d5">7.5</data>
+  <data key="d6">2</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">1</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,shared_phone,shared_vehicle,shared_location</data>
+  <data key="d12">5</data>
+</edge>
+<edge source="Nitin Roy" target="Vikram Das">
+  <data key="d5">1.0</data>
+  <data key="d6">1</data>
+  <data key="d7">0</data>
+  <data key="d8">0</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Nitin Roy" target="Sameer Khan">
+  <data key="d5">10.0</data>
+  <data key="d6">2</data>
+  <data key="d7">1</data>
+  <data key="d8">3</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_location</data>
+  <data key="d12">7</data>
+</edge>
+<edge source="Nitin Roy" target="Suresh Yadav">
+  <data key="d5">5.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">1</data>
+  <data key="d10">1</data>
+  <data key="d11">shared_phone,shared_vehicle,shared_location</data>
+  <data key="d12">3</data>
+</edge>
+<edge source="Vikram Das" target="Amit Verma">
+  <data key="d5">20.5</data>
+  <data key="d6">2</data>
+  <data key="d7">5</data>
+  <data key="d8">3</data>
+  <data key="d9">1</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_vehicle,shared_location</data>
+  <data key="d12">12</data>
+</edge>
+<edge source="Vikram Das" target="Sameer Khan">
+  <data key="d5">7.5</data>
+  <data key="d6">3</data>
+  <data key="d7">0</data>
+  <data key="d8">2</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,shared_phone,shared_location</data>
+  <data key="d12">6</data>
+</edge>
+<edge source="Vikram Das" target="Suresh Yadav">
+  <data key="d5">2.5</data>
+  <data key="d6">1</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">co_occurrence,shared_phone</data>
+  <data key="d12">2</data>
+</edge>
+<edge source="Vikram Das" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Vikram Das" target="Priya Mehta">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Vikram Das" target="Rahul Sen">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Amit Verma" target="Suresh Yadav">
+  <data key="d5">10.5</data>
+  <data key="d6">0</data>
+  <data key="d7">1</data>
+  <data key="d8">3</data>
+  <data key="d9">1</data>
+  <data key="d10">1</data>
+  <data key="d11">cdr_call,shared_phone,shared_vehicle,shared_location</data>
+  <data key="d12">6</data>
+</edge>
+<edge source="Amit Verma" target="Sameer Khan">
+  <data key="d5">13.0</data>
+  <data key="d6">0</data>
+  <data key="d7">2</data>
+  <data key="d8">4</data>
+  <data key="d9">0</data>
+  <data key="d10">2</data>
+  <data key="d11">cdr_call,shared_phone,shared_location</data>
+  <data key="d12">8</data>
+</edge>
+<edge source="Amit Verma" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Amit Verma" target="Priya Mehta">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Amit Verma" target="Rahul Sen">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Sameer Khan" target="Suresh Yadav">
+  <data key="d5">11.0</data>
+  <data key="d6">1</data>
+  <data key="d7">2</data>
+  <data key="d8">3</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">co_occurrence,cdr_call,shared_phone,shared_location</data>
+  <data key="d12">7</data>
+</edge>
+<edge source="Sameer Khan" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Sameer Khan" target="Priya Mehta">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Sameer Khan" target="Rahul Sen">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Rahul Sen" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Rahul Sen" target="Priya Mehta">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+<edge source="Priya Mehta" target="Ankit Bose">
+  <data key="d5">1.5</data>
+  <data key="d6">0</data>
+  <data key="d7">0</data>
+  <data key="d8">1</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">shared_phone</data>
+  <data key="d12">1</data>
+</edge>
+</graph></graphml>
