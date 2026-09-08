@@ -1,0 +1,1130 @@
+{
+    "metadata": {
+        "project": "AI-Powered Criminal Network Analysis System",
+        "dataset_type": "Synthetic",
+        "generated_by": "Faker",
+        "locale": "en_IN",
+        "generated_on": "2026-09-08 00:42:14",
+        "warning": "Synthetic data for demonstration/testing only."
+    },
+    "people": [
+        {
+            "person_id": "P001",
+            "name": "Arjun Malhotra",
+            "role": "Key Person"
+        },
+        {
+            "person_id": "P002",
+            "name": "Ravi Sharma",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P003",
+            "name": "Vikram Das",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P004",
+            "name": "Sameer Khan",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P005",
+            "name": "Nitin Roy",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P006",
+            "name": "Amit Verma",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P007",
+            "name": "Suresh Yadav",
+            "role": "Associate"
+        },
+        {
+            "person_id": "P008",
+            "name": "Rahul Sen",
+            "role": "Unrelated"
+        },
+        {
+            "person_id": "P009",
+            "name": "Priya Mehta",
+            "role": "Unrelated"
+        },
+        {
+            "person_id": "P010",
+            "name": "Ankit Bose",
+            "role": "Unrelated"
+        }
+    ],
+    "person_details": {
+        "Arjun Malhotra": {
+            "person_id": "P001",
+            "name": "Arjun Malhotra",
+            "role": "Key Person",
+            "phone": "9000001001",
+            "address": "43/321, Chahal Circle, Patna 133890",
+            "city": "Howrah"
+        },
+        "Ravi Sharma": {
+            "person_id": "P002",
+            "name": "Ravi Sharma",
+            "role": "Associate",
+            "phone": "9000001002",
+            "address": "794, Dutta Nagar, Mau-235116",
+            "city": "Kolkata"
+        },
+        "Vikram Das": {
+            "person_id": "P003",
+            "name": "Vikram Das",
+            "role": "Associate",
+            "phone": "9000001003",
+            "address": "H.No. 94, Sharaf Nagar, Burhanpur 849593",
+            "city": "Asansol"
+        },
+        "Sameer Khan": {
+            "person_id": "P004",
+            "name": "Sameer Khan",
+            "role": "Associate",
+            "phone": "9000001004",
+            "address": "34/131, Mall Marg, Bharatpur 553419",
+            "city": "Siliguri"
+        },
+        "Nitin Roy": {
+            "person_id": "P005",
+            "name": "Nitin Roy",
+            "role": "Associate",
+            "phone": "9000001005",
+            "address": "764, Kanda Circle, Pimpri-Chinchwad-056413",
+            "city": "Siliguri"
+        },
+        "Amit Verma": {
+            "person_id": "P006",
+            "name": "Amit Verma",
+            "role": "Associate",
+            "phone": "9000001006",
+            "address": "76/724, Koshy Street, Bhimavaram 965328",
+            "city": "Durgapur"
+        },
+        "Suresh Yadav": {
+            "person_id": "P007",
+            "name": "Suresh Yadav",
+            "role": "Associate",
+            "phone": "9000001007",
+            "address": "H.No. 122, Bhatt Marg, Eluru-848018",
+            "city": "Howrah"
+        },
+        "Rahul Sen": {
+            "person_id": "P008",
+            "name": "Rahul Sen",
+            "role": "Unrelated",
+            "phone": "9000001008",
+            "address": "H.No. 462, Aggarwal Chowk, Orai 814893",
+            "city": "Howrah"
+        },
+        "Priya Mehta": {
+            "person_id": "P009",
+            "name": "Priya Mehta",
+            "role": "Unrelated",
+            "phone": "9000001009",
+            "address": "880, Naik, Surat-543039",
+            "city": "Delhi"
+        },
+        "Ankit Bose": {
+            "person_id": "P010",
+            "name": "Ankit Bose",
+            "role": "Unrelated",
+            "phone": "9000001010",
+            "address": "71/822, Gandhi Chowk, Dehri 383465",
+            "city": "Kolkata"
+        }
+    },
+    "phone_numbers": {
+        "Arjun Malhotra": "9000001001",
+        "Ravi Sharma": "9000001002",
+        "Vikram Das": "9000001003",
+        "Sameer Khan": "9000001004",
+        "Nitin Roy": "9000001005",
+        "Amit Verma": "9000001006",
+        "Suresh Yadav": "9000001007",
+        "Rahul Sen": "9000001008",
+        "Priya Mehta": "9000001009",
+        "Ankit Bose": "9000001010"
+    },
+    "locations": [
+        "Kolkata",
+        "Howrah",
+        "Durgapur",
+        "Siliguri",
+        "Asansol",
+        "Mumbai",
+        "Delhi",
+        "Patna"
+    ],
+    "vehicles": [
+        "WB02AB4521",
+        "WB06CD7832",
+        "WB12EF2198",
+        "WB24GH6610",
+        "WB10JK9034"
+    ],
+    "organizations": [
+        "Eastern Logistics",
+        "Metro Traders",
+        "Royal Transport Services",
+        "City Wholesale",
+        "North Bengal Suppliers"
+    ],
+    "network_structure": {
+        "Arjun Malhotra": [
+            "Ravi Sharma",
+            "Vikram Das",
+            "Sameer Khan"
+        ],
+        "Ravi Sharma": [
+            "Nitin Roy"
+        ],
+        "Vikram Das": [
+            "Amit Verma"
+        ],
+        "Sameer Khan": [
+            "Suresh Yadav"
+        ]
+    },
+    "documents": [
+        {
+            "report_id": "REP-0001",
+            "case_id": "CASE-2026-0001",
+            "type": "FIR",
+            "date": "2026-01-15",
+            "location": "Howrah",
+            "text": "Arjun Malhotra was reportedly seen meeting Ravi Sharma near Howrah Railway Station. Vehicle WB02AB4521 was observed at the location."
+        },
+        {
+            "report_id": "REP-0002",
+            "case_id": "CASE-2026-0001",
+            "type": "Surveillance Report",
+            "date": "2026-01-21",
+            "location": "Kolkata",
+            "text": "Ravi Sharma was observed meeting Nitin Roy in Kolkata. Vehicle WB06CD7832 was associated with the meeting."
+        },
+        {
+            "report_id": "REP-0003",
+            "case_id": "CASE-2026-0001",
+            "type": "Surveillance Report",
+            "date": "2026-02-03",
+            "location": "Durgapur",
+            "text": "Arjun Malhotra and Vikram Das were observed meeting near a warehouse in Durgapur."
+        },
+        {
+            "report_id": "REP-0004",
+            "case_id": "CASE-2026-0001",
+            "type": "Police Report",
+            "date": "2026-02-12",
+            "location": "Asansol",
+            "text": "Vikram Das was seen communicating with Amit Verma near Asansol. Vehicle WB12EF2198 was present."
+        },
+        {
+            "report_id": "REP-0005",
+            "case_id": "CASE-2026-0001",
+            "type": "FIR",
+            "date": "2026-02-22",
+            "location": "Kolkata",
+            "text": "Sameer Khan and Arjun Malhotra were reportedly seen together near a commercial warehouse in Kolkata."
+        },
+        {
+            "report_id": "REP-0006",
+            "case_id": "CASE-2026-0001",
+            "type": "Surveillance Report",
+            "date": "2026-03-05",
+            "location": "Siliguri",
+            "text": "Sameer Khan was observed meeting Suresh Yadav in Siliguri. The meeting lasted approximately forty minutes."
+        },
+        {
+            "report_id": "REP-0007",
+            "case_id": "CASE-2026-0001",
+            "type": "Financial Report",
+            "date": "2026-03-14",
+            "location": "Kolkata",
+            "text": "A transaction involving Arjun Malhotra and Eastern Logistics was recorded in Kolkata."
+        },
+        {
+            "report_id": "REP-0008",
+            "case_id": "CASE-2026-0001",
+            "type": "Financial Report",
+            "date": "2026-03-20",
+            "location": "Kolkata",
+            "text": "Ravi Sharma was linked to Metro Traders through transactions recorded in Kolkata."
+        },
+        {
+            "report_id": "REP-0009",
+            "case_id": "CASE-2026-0001",
+            "type": "Surveillance Report",
+            "date": "2026-04-02",
+            "location": "Durgapur",
+            "text": "Arjun Malhotra, Vikram Das and Sameer Khan were reported in the same area of Durgapur."
+        },
+        {
+            "report_id": "REP-0010",
+            "case_id": "CASE-2026-0001",
+            "type": "Police Report",
+            "date": "2026-04-15",
+            "location": "Howrah",
+            "text": "Nitin Roy and Ravi Sharma were identified during an investigation in Howrah."
+        },
+        {
+            "report_id": "REP-0011",
+            "case_id": "CASE-2026-0002",
+            "type": "Police Report",
+            "date": "2026-04-23",
+            "location": "Mumbai",
+            "text": "Rahul Sen was questioned regarding an unrelated incident in Mumbai."
+        },
+        {
+            "report_id": "REP-0012",
+            "case_id": "CASE-2026-0003",
+            "type": "Police Report",
+            "date": "2026-05-04",
+            "location": "Delhi",
+            "text": "Priya Mehta was reported near a commercial location in Delhi. No connection with the primary investigation was established."
+        },
+        {
+            "report_id": "REP-0013",
+            "case_id": "CASE-2026-0004",
+            "type": "Police Report",
+            "date": "2026-05-17",
+            "location": "Patna",
+            "text": "Ankit Bose appeared in a separate report concerning an unrelated incident in Patna."
+        },
+        {
+            "report_id": "REP-0014",
+            "case_id": "CASE-2026-0002",
+            "type": "FIR",
+            "date": "2026-07-03",
+            "location": "Howrah",
+            "text": "A report mentioned Arjun Malhotra and Ravi Sharma in connection with activity recorded in Howrah."
+        },
+        {
+            "report_id": "REP-0015",
+            "case_id": "CASE-2026-0003",
+            "type": "Financial Report",
+            "date": "2026-07-27",
+            "location": "Siliguri",
+            "text": "A report mentioned Amit Verma and Nitin Roy in connection with activity recorded in Siliguri."
+        },
+        {
+            "report_id": "REP-0016",
+            "case_id": "CASE-2026-0002",
+            "type": "Surveillance Report",
+            "date": "2026-02-25",
+            "location": "Howrah",
+            "text": "Suresh Yadav and Arjun Malhotra were seen together near a commercial location in Howrah."
+        },
+        {
+            "report_id": "REP-0017",
+            "case_id": "CASE-2026-0003",
+            "type": "Financial Report",
+            "date": "2026-08-05",
+            "location": "Kolkata",
+            "text": "Suresh Yadav was observed meeting Vikram Das in Kolkata."
+        },
+        {
+            "report_id": "REP-0018",
+            "case_id": "CASE-2026-0001",
+            "type": "Financial Report",
+            "date": "2026-08-25",
+            "location": "Durgapur",
+            "text": "A report mentioned Vikram Das and Nitin Roy in connection with activity recorded in Durgapur."
+        },
+        {
+            "report_id": "REP-0019",
+            "case_id": "CASE-2026-0002",
+            "type": "Surveillance Report",
+            "date": "2026-06-30",
+            "location": "Asansol",
+            "text": "A report mentioned Sameer Khan and Arjun Malhotra in connection with activity recorded in Asansol."
+        },
+        {
+            "report_id": "REP-0020",
+            "case_id": "CASE-2026-0001",
+            "type": "FIR",
+            "date": "2026-04-08",
+            "location": "Howrah",
+            "text": "Investigators recorded an interaction between Arjun Malhotra and Amit Verma in Howrah."
+        },
+        {
+            "report_id": "REP-0021",
+            "case_id": "CASE-2026-0002",
+            "type": "Surveillance Report",
+            "date": "2026-06-21",
+            "location": "Durgapur",
+            "text": "Vikram Das and Sameer Khan were seen together near a commercial location in Durgapur."
+        },
+        {
+            "report_id": "REP-0022",
+            "case_id": "CASE-2026-0002",
+            "type": "Police Report",
+            "date": "2026-02-11",
+            "location": "Kolkata",
+            "text": "A report mentioned Vikram Das and Amit Verma in connection with activity recorded in Kolkata."
+        },
+        {
+            "report_id": "REP-0023",
+            "case_id": "CASE-2026-0002",
+            "type": "Surveillance Report",
+            "date": "2026-07-30",
+            "location": "Asansol",
+            "text": "Sameer Khan was observed meeting Vikram Das in Asansol."
+        },
+        {
+            "report_id": "REP-0024",
+            "case_id": "CASE-2026-0002",
+            "type": "Surveillance Report",
+            "date": "2026-08-22",
+            "location": "Durgapur",
+            "text": "Arjun Malhotra was observed meeting Suresh Yadav in Durgapur."
+        },
+        {
+            "report_id": "REP-0025",
+            "case_id": "CASE-2026-0004",
+            "type": "Financial Report",
+            "date": "2026-02-06",
+            "location": "Durgapur",
+            "text": "Surveillance information placed Nitin Roy and Amit Verma in the same area of Durgapur. Vehicle WB06CD7832 was also observed."
+        },
+        {
+            "report_id": "REP-0026",
+            "case_id": "CASE-2026-0004",
+            "type": "Surveillance Report",
+            "date": "2026-08-18",
+            "location": "Howrah",
+            "text": "A report mentioned Vikram Das and Ravi Sharma in connection with activity recorded in Howrah."
+        },
+        {
+            "report_id": "REP-0027",
+            "case_id": "CASE-2026-0004",
+            "type": "Police Report",
+            "date": "2026-01-24",
+            "location": "Durgapur",
+            "text": "A report mentioned Nitin Roy and Sameer Khan in connection with activity recorded in Durgapur."
+        },
+        {
+            "report_id": "REP-0028",
+            "case_id": "CASE-2026-0001",
+            "type": "Police Report",
+            "date": "2026-04-09",
+            "location": "Kolkata",
+            "text": "Surveillance information placed Suresh Yadav and Arjun Malhotra in the same area of Kolkata. Vehicle WB06CD7832 was also observed."
+        },
+        {
+            "report_id": "REP-0029",
+            "case_id": "CASE-2026-0001",
+            "type": "Surveillance Report",
+            "date": "2026-06-24",
+            "location": "Siliguri",
+            "text": "A report mentioned Sameer Khan and Nitin Roy in connection with activity recorded in Siliguri."
+        },
+        {
+            "report_id": "REP-0030",
+            "case_id": "CASE-2026-0003",
+            "type": "Surveillance Report",
+            "date": "2026-04-22",
+            "location": "Asansol",
+            "text": "Amit Verma was observed meeting Arjun Malhotra in Asansol."
+        }
+    ],
+    "cdr_records": [
+        {
+            "cdr_id": "CDR-0001",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Ravi Sharma",
+            "receiver_phone": "9000001002",
+            "date": "2026-04-27",
+            "time": "08:50",
+            "duration_seconds": 756,
+            "location": "Durgapur"
+        },
+        {
+            "cdr_id": "CDR-0002",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Ravi Sharma",
+            "receiver_phone": "9000001002",
+            "date": "2026-05-09",
+            "time": "20:10",
+            "duration_seconds": 539,
+            "location": "Kolkata"
+        },
+        {
+            "cdr_id": "CDR-0003",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Ravi Sharma",
+            "receiver_phone": "9000001002",
+            "date": "2026-08-11",
+            "time": "18:20",
+            "duration_seconds": 881,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0004",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Vikram Das",
+            "receiver_phone": "9000001003",
+            "date": "2026-02-09",
+            "time": "13:10",
+            "duration_seconds": 572,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0005",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Vikram Das",
+            "receiver_phone": "9000001003",
+            "date": "2026-08-24",
+            "time": "08:40",
+            "duration_seconds": 351,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0006",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Vikram Das",
+            "receiver_phone": "9000001003",
+            "date": "2026-01-05",
+            "time": "09:20",
+            "duration_seconds": 871,
+            "location": "Durgapur"
+        },
+        {
+            "cdr_id": "CDR-0007",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-01-15",
+            "time": "11:40",
+            "duration_seconds": 100,
+            "location": "Kolkata"
+        },
+        {
+            "cdr_id": "CDR-0008",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-07-07",
+            "time": "15:00",
+            "duration_seconds": 798,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0009",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-07-16",
+            "time": "10:10",
+            "duration_seconds": 695,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0010",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Nitin Roy",
+            "receiver_phone": "9000001005",
+            "date": "2026-03-09",
+            "time": "16:40",
+            "duration_seconds": 453,
+            "location": "Howrah"
+        },
+        {
+            "cdr_id": "CDR-0011",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Nitin Roy",
+            "receiver_phone": "9000001005",
+            "date": "2026-08-26",
+            "time": "16:50",
+            "duration_seconds": 726,
+            "location": "Howrah"
+        },
+        {
+            "cdr_id": "CDR-0012",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Nitin Roy",
+            "receiver_phone": "9000001005",
+            "date": "2026-07-02",
+            "time": "12:30",
+            "duration_seconds": 707,
+            "location": "Durgapur"
+        },
+        {
+            "cdr_id": "CDR-0013",
+            "caller": "Vikram Das",
+            "caller_phone": "9000001003",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-08-19",
+            "time": "16:30",
+            "duration_seconds": 143,
+            "location": "Howrah"
+        },
+        {
+            "cdr_id": "CDR-0014",
+            "caller": "Vikram Das",
+            "caller_phone": "9000001003",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-02-27",
+            "time": "09:20",
+            "duration_seconds": 41,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0015",
+            "caller": "Vikram Das",
+            "caller_phone": "9000001003",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-05-22",
+            "time": "11:40",
+            "duration_seconds": 245,
+            "location": "Kolkata"
+        },
+        {
+            "cdr_id": "CDR-0016",
+            "caller": "Vikram Das",
+            "caller_phone": "9000001003",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-01-19",
+            "time": "19:50",
+            "duration_seconds": 80,
+            "location": "Howrah"
+        },
+        {
+            "cdr_id": "CDR-0017",
+            "caller": "Vikram Das",
+            "caller_phone": "9000001003",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-01-18",
+            "time": "22:00",
+            "duration_seconds": 900,
+            "location": "Durgapur"
+        },
+        {
+            "cdr_id": "CDR-0018",
+            "caller": "Sameer Khan",
+            "caller_phone": "9000001004",
+            "receiver": "Suresh Yadav",
+            "receiver_phone": "9000001007",
+            "date": "2026-05-12",
+            "time": "11:20",
+            "duration_seconds": 705,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0019",
+            "caller": "Sameer Khan",
+            "caller_phone": "9000001004",
+            "receiver": "Suresh Yadav",
+            "receiver_phone": "9000001007",
+            "date": "2026-02-24",
+            "time": "16:10",
+            "duration_seconds": 760,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0020",
+            "caller": "Nitin Roy",
+            "caller_phone": "9000001005",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-03-04",
+            "time": "20:30",
+            "duration_seconds": 426,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0021",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-04-21",
+            "time": "13:30",
+            "duration_seconds": 430,
+            "location": "Patna"
+        },
+        {
+            "cdr_id": "CDR-0022",
+            "caller": "Suresh Yadav",
+            "caller_phone": "9000001007",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-01-14",
+            "time": "18:50",
+            "duration_seconds": 110,
+            "location": "Kolkata"
+        },
+        {
+            "cdr_id": "CDR-0023",
+            "caller": "Sameer Khan",
+            "caller_phone": "9000001004",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-03-28",
+            "time": "20:00",
+            "duration_seconds": 264,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0024",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Nitin Roy",
+            "receiver_phone": "9000001005",
+            "date": "2026-04-25",
+            "time": "10:30",
+            "duration_seconds": 197,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0025",
+            "caller": "Sameer Khan",
+            "caller_phone": "9000001004",
+            "receiver": "Ravi Sharma",
+            "receiver_phone": "9000001002",
+            "date": "2026-08-12",
+            "time": "22:00",
+            "duration_seconds": 463,
+            "location": "Howrah"
+        },
+        {
+            "cdr_id": "CDR-0026",
+            "caller": "Arjun Malhotra",
+            "caller_phone": "9000001001",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-05-19",
+            "time": "21:00",
+            "duration_seconds": 105,
+            "location": "Siliguri"
+        },
+        {
+            "cdr_id": "CDR-0027",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-05-05",
+            "time": "15:10",
+            "duration_seconds": 420,
+            "location": "Kolkata"
+        },
+        {
+            "cdr_id": "CDR-0028",
+            "caller": "Ravi Sharma",
+            "caller_phone": "9000001002",
+            "receiver": "Sameer Khan",
+            "receiver_phone": "9000001004",
+            "date": "2026-01-01",
+            "time": "14:20",
+            "duration_seconds": 475,
+            "location": "Asansol"
+        },
+        {
+            "cdr_id": "CDR-0029",
+            "caller": "Sameer Khan",
+            "caller_phone": "9000001004",
+            "receiver": "Amit Verma",
+            "receiver_phone": "9000001006",
+            "date": "2026-07-07",
+            "time": "20:40",
+            "duration_seconds": 508,
+            "location": "Durgapur"
+        }
+    ],
+    "financial_transactions": [
+        {
+            "transaction_id": "TXN-00001",
+            "sender": "Arjun Malhotra",
+            "receiver": "Ravi Sharma",
+            "amount": 82780,
+            "date": "2026-02-25",
+            "location": "Kolkata",
+            "organization": "North Bengal Suppliers"
+        },
+        {
+            "transaction_id": "TXN-00002",
+            "sender": "Arjun Malhotra",
+            "receiver": "Vikram Das",
+            "amount": 147133,
+            "date": "2026-01-16",
+            "location": "Durgapur",
+            "organization": "Eastern Logistics"
+        },
+        {
+            "transaction_id": "TXN-00003",
+            "sender": "Arjun Malhotra",
+            "receiver": "Vikram Das",
+            "amount": 18144,
+            "date": "2026-05-30",
+            "location": "Siliguri",
+            "organization": "North Bengal Suppliers"
+        },
+        {
+            "transaction_id": "TXN-00004",
+            "sender": "Arjun Malhotra",
+            "receiver": "Vikram Das",
+            "amount": 246011,
+            "date": "2026-08-07",
+            "location": "Asansol",
+            "organization": "Metro Traders"
+        },
+        {
+            "transaction_id": "TXN-00005",
+            "sender": "Arjun Malhotra",
+            "receiver": "Sameer Khan",
+            "amount": 138124,
+            "date": "2026-01-21",
+            "location": "Howrah",
+            "organization": "Eastern Logistics"
+        },
+        {
+            "transaction_id": "TXN-00006",
+            "sender": "Ravi Sharma",
+            "receiver": "Nitin Roy",
+            "amount": 22815,
+            "date": "2026-06-22",
+            "location": "Howrah",
+            "organization": "City Wholesale"
+        },
+        {
+            "transaction_id": "TXN-00007",
+            "sender": "Ravi Sharma",
+            "receiver": "Nitin Roy",
+            "amount": 36427,
+            "date": "2026-08-30",
+            "location": "Asansol",
+            "organization": "Metro Traders"
+        },
+        {
+            "transaction_id": "TXN-00008",
+            "sender": "Ravi Sharma",
+            "receiver": "Nitin Roy",
+            "amount": 156760,
+            "date": "2026-06-02",
+            "location": "Kolkata",
+            "organization": "North Bengal Suppliers"
+        },
+        {
+            "transaction_id": "TXN-00009",
+            "sender": "Vikram Das",
+            "receiver": "Amit Verma",
+            "amount": 114897,
+            "date": "2026-06-18",
+            "location": "Asansol",
+            "organization": "North Bengal Suppliers"
+        },
+        {
+            "transaction_id": "TXN-00010",
+            "sender": "Sameer Khan",
+            "receiver": "Suresh Yadav",
+            "amount": 87934,
+            "date": "2026-08-28",
+            "location": "Durgapur",
+            "organization": "Metro Traders"
+        },
+        {
+            "transaction_id": "TXN-00011",
+            "sender": "Sameer Khan",
+            "receiver": "Suresh Yadav",
+            "amount": 180564,
+            "date": "2026-07-03",
+            "location": "Durgapur",
+            "organization": "Metro Traders"
+        },
+        {
+            "transaction_id": "TXN-00012",
+            "sender": "Sameer Khan",
+            "receiver": "Suresh Yadav",
+            "amount": 74629,
+            "date": "2026-04-12",
+            "location": "Howrah",
+            "organization": "Royal Transport Services"
+        }
+    ],
+    "vehicle_records": [
+        {
+            "vehicle_number": "WB02AB4521",
+            "associated_person": "Sameer Khan",
+            "location": "Durgapur",
+            "last_seen": "2026-08-26"
+        },
+        {
+            "vehicle_number": "WB06CD7832",
+            "associated_person": "Suresh Yadav",
+            "location": "Kolkata",
+            "last_seen": "2026-01-03"
+        },
+        {
+            "vehicle_number": "WB12EF2198",
+            "associated_person": "Sameer Khan",
+            "location": "Asansol",
+            "last_seen": "2026-05-25"
+        },
+        {
+            "vehicle_number": "WB24GH6610",
+            "associated_person": "Arjun Malhotra",
+            "location": "Kolkata",
+            "last_seen": "2026-05-18"
+        },
+        {
+            "vehicle_number": "WB10JK9034",
+            "associated_person": "Ravi Sharma",
+            "location": "Asansol",
+            "last_seen": "2026-03-09"
+        }
+    ],
+    "organization_records": [
+        {
+            "organization": "Eastern Logistics",
+            "associated_person": "Ravi Sharma",
+            "location": "Durgapur"
+        },
+        {
+            "organization": "Metro Traders",
+            "associated_person": "Arjun Malhotra",
+            "location": "Howrah"
+        },
+        {
+            "organization": "Royal Transport Services",
+            "associated_person": "Vikram Das",
+            "location": "Durgapur"
+        },
+        {
+            "organization": "City Wholesale",
+            "associated_person": "Ravi Sharma",
+            "location": "Siliguri"
+        },
+        {
+            "organization": "North Bengal Suppliers",
+            "associated_person": "Suresh Yadav",
+            "location": "Asansol"
+        }
+    ],
+    "entities": [
+        {
+            "entity_id": "P001",
+            "entity_type": "PERSON",
+            "entity_name": "Arjun Malhotra",
+            "role": "Key Person"
+        },
+        {
+            "entity_id": "P002",
+            "entity_type": "PERSON",
+            "entity_name": "Ravi Sharma",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P003",
+            "entity_type": "PERSON",
+            "entity_name": "Vikram Das",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P004",
+            "entity_type": "PERSON",
+            "entity_name": "Sameer Khan",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P005",
+            "entity_type": "PERSON",
+            "entity_name": "Nitin Roy",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P006",
+            "entity_type": "PERSON",
+            "entity_name": "Amit Verma",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P007",
+            "entity_type": "PERSON",
+            "entity_name": "Suresh Yadav",
+            "role": "Associate"
+        },
+        {
+            "entity_id": "P008",
+            "entity_type": "PERSON",
+            "entity_name": "Rahul Sen",
+            "role": "Unrelated"
+        },
+        {
+            "entity_id": "P009",
+            "entity_type": "PERSON",
+            "entity_name": "Priya Mehta",
+            "role": "Unrelated"
+        },
+        {
+            "entity_id": "P010",
+            "entity_type": "PERSON",
+            "entity_name": "Ankit Bose",
+            "role": "Unrelated"
+        },
+        {
+            "entity_id": "L001",
+            "entity_type": "LOCATION",
+            "entity_name": "Kolkata"
+        },
+        {
+            "entity_id": "L002",
+            "entity_type": "LOCATION",
+            "entity_name": "Howrah"
+        },
+        {
+            "entity_id": "L003",
+            "entity_type": "LOCATION",
+            "entity_name": "Durgapur"
+        },
+        {
+            "entity_id": "L004",
+            "entity_type": "LOCATION",
+            "entity_name": "Siliguri"
+        },
+        {
+            "entity_id": "L005",
+            "entity_type": "LOCATION",
+            "entity_name": "Asansol"
+        },
+        {
+            "entity_id": "L006",
+            "entity_type": "LOCATION",
+            "entity_name": "Mumbai"
+        },
+        {
+            "entity_id": "L007",
+            "entity_type": "LOCATION",
+            "entity_name": "Delhi"
+        },
+        {
+            "entity_id": "L008",
+            "entity_type": "LOCATION",
+            "entity_name": "Patna"
+        },
+        {
+            "entity_id": "O001",
+            "entity_type": "ORGANIZATION",
+            "entity_name": "Eastern Logistics"
+        },
+        {
+            "entity_id": "O002",
+            "entity_type": "ORGANIZATION",
+            "entity_name": "Metro Traders"
+        },
+        {
+            "entity_id": "O003",
+            "entity_type": "ORGANIZATION",
+            "entity_name": "Royal Transport Services"
+        },
+        {
+            "entity_id": "O004",
+            "entity_type": "ORGANIZATION",
+            "entity_name": "City Wholesale"
+        },
+        {
+            "entity_id": "O005",
+            "entity_type": "ORGANIZATION",
+            "entity_name": "North Bengal Suppliers"
+        },
+        {
+            "entity_id": "V001",
+            "entity_type": "VEHICLE",
+            "entity_name": "WB02AB4521"
+        },
+        {
+            "entity_id": "V002",
+            "entity_type": "VEHICLE",
+            "entity_name": "WB06CD7832"
+        },
+        {
+            "entity_id": "V003",
+            "entity_type": "VEHICLE",
+            "entity_name": "WB12EF2198"
+        },
+        {
+            "entity_id": "V004",
+            "entity_type": "VEHICLE",
+            "entity_name": "WB24GH6610"
+        },
+        {
+            "entity_id": "V005",
+            "entity_type": "VEHICLE",
+            "entity_name": "WB10JK9034"
+        },
+        {
+            "entity_id": "PH001",
+            "entity_type": "PHONE",
+            "entity_name": "9000001001"
+        },
+        {
+            "entity_id": "PH002",
+            "entity_type": "PHONE",
+            "entity_name": "9000001002"
+        },
+        {
+            "entity_id": "PH003",
+            "entity_type": "PHONE",
+            "entity_name": "9000001003"
+        },
+        {
+            "entity_id": "PH004",
+            "entity_type": "PHONE",
+            "entity_name": "9000001004"
+        },
+        {
+            "entity_id": "PH005",
+            "entity_type": "PHONE",
+            "entity_name": "9000001005"
+        },
+        {
+            "entity_id": "PH006",
+            "entity_type": "PHONE",
+            "entity_name": "9000001006"
+        },
+        {
+            "entity_id": "PH007",
+            "entity_type": "PHONE",
+            "entity_name": "9000001007"
+        },
+        {
+            "entity_id": "PH008",
+            "entity_type": "PHONE",
+            "entity_name": "9000001008"
+        },
+        {
+            "entity_id": "PH009",
+            "entity_type": "PHONE",
+            "entity_name": "9000001009"
+        },
+        {
+            "entity_id": "PH010",
+            "entity_type": "PHONE",
+            "entity_name": "9000001010"
+        }
+    ]
+}

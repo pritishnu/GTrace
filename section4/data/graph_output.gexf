@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-09-08">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="5" title="co_occurrence" type="long" />
+      <attribute id="6" title="cdr_call" type="long" />
+      <attribute id="7" title="shared_phone" type="long" />
+      <attribute id="8" title="shared_vehicle" type="long" />
+      <attribute id="9" title="shared_location" type="long" />
+      <attribute id="10" title="edge_types" type="string" />
+      <attribute id="11" title="details" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+      <attribute id="1" title="role" type="string" />
+      <attribute id="2" title="phone" type="string" />
+      <attribute id="3" title="city" type="string" />
+      <attribute id="4" title="doc_count" type="long" />
+    </attributes>
+    <nodes>
+      <node id="Arjun Malhotra" label="Arjun Malhotra">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Key Person" />
+          <attvalue for="2" value="9000001001" />
+          <attvalue for="3" value="Howrah" />
+          <attvalue for="4" value="26" />
+        </attvalues>
+      </node>
+      <node id="Ravi Sharma" label="Ravi Sharma">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001002" />
+          <attvalue for="3" value="Kolkata" />
+          <attvalue for="4" value="16" />
+        </attvalues>
+      </node>
+      <node id="Nitin Roy" label="Nitin Roy">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001005" />
+          <attvalue for="3" value="Siliguri" />
+          <attvalue for="4" value="12" />
+        </attvalues>
+      </node>
+      <node id="Vikram Das" label="Vikram Das">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001003" />
+          <attvalue for="3" value="Asansol" />
+          <attvalue for="4" value="17" />
+        </attvalues>
+      </node>
+      <node id="Amit Verma" label="Amit Verma">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001006" />
+          <attvalue for="3" value="Durgapur" />
+          <attvalue for="4" value="16" />
+        </attvalues>
+      </node>
+      <node id="Sameer Khan" label="Sameer Khan">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001004" />
+          <attvalue for="3" value="Siliguri" />
+          <attvalue for="4" value="19" />
+        </attvalues>
+      </node>
+      <node id="Suresh Yadav" label="Suresh Yadav">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Associate" />
+          <attvalue for="2" value="9000001007" />
+          <attvalue for="3" value="Howrah" />
+          <attvalue for="4" value="8" />
+        </attvalues>
+      </node>
+      <node id="Rahul Sen" label="Rahul Sen">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Unrelated" />
+          <attvalue for="2" value="9000001008" />
+          <attvalue for="3" value="Howrah" />
+          <attvalue for="4" value="2" />
+        </attvalues>
+      </node>
+      <node id="Priya Mehta" label="Priya Mehta">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Unrelated" />
+          <attvalue for="2" value="9000001009" />
+          <attvalue for="3" value="Delhi" />
+          <attvalue for="4" value="2" />
+        </attvalues>
+      </node>
+      <node id="Ankit Bose" label="Ankit Bose">
+        <attvalues>
+          <attvalue for="0" value="PERSON" />
+          <attvalue for="1" value="Unrelated" />
+          <attvalue for="2" value="9000001010" />
+          <attvalue for="3" value="Kolkata" />
+          <attvalue for="4" value="2" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Arjun Malhotra" target="Ravi Sharma" id="0" weight="17.5">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="3" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="2" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_vehicle" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Vikram Das" id="1" weight="14.0">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="3" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_location" />
+          <attvalue for="11" value="9" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Sameer Khan" id="2" weight="16.5">
+        <attvalues>
+          <attvalue for="5" value="3" />
+          <attvalue for="6" value="3" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_location" />
+          <attvalue for="11" value="11" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Suresh Yadav" id="3" weight="8.5">
+        <attvalues>
+          <attvalue for="5" value="3" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence,shared_phone,shared_vehicle" />
+          <attvalue for="11" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Amit Verma" id="4" weight="16.0">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="2" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_vehicle,shared_location" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Rahul Sen" id="5" weight="5.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="cdr_call,shared_phone" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Priya Mehta" id="6" weight="5.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="cdr_call,shared_phone" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Ankit Bose" id="7" weight="5.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="cdr_call,shared_phone" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Arjun Malhotra" target="Nitin Roy" id="8" weight="5.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone,shared_vehicle" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Nitin Roy" id="9" weight="17.0">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="4" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_vehicle" />
+          <attvalue for="11" value="10" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Vikram Das" id="10" weight="2.5">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence,shared_phone" />
+          <attvalue for="11" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Sameer Khan" id="11" weight="12.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="3" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="cdr_call,shared_phone" />
+          <attvalue for="11" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Amit Verma" id="12" weight="5.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone,shared_vehicle" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Ankit Bose" id="13" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Priya Mehta" id="14" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Rahul Sen" id="15" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Ravi Sharma" target="Suresh Yadav" id="16" weight="4.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone,shared_vehicle" />
+          <attvalue for="11" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Nitin Roy" target="Amit Verma" id="17" weight="7.5">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,shared_phone,shared_vehicle,shared_location" />
+          <attvalue for="11" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="Nitin Roy" target="Vikram Das" id="18" weight="1.0">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="0" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Nitin Roy" target="Sameer Khan" id="19" weight="10.0">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_location" />
+          <attvalue for="11" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="Nitin Roy" target="Suresh Yadav" id="20" weight="5.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="shared_phone,shared_vehicle,shared_location" />
+          <attvalue for="11" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Amit Verma" id="21" weight="20.5">
+        <attvalues>
+          <attvalue for="5" value="2" />
+          <attvalue for="6" value="5" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_vehicle,shared_location" />
+          <attvalue for="11" value="12" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Sameer Khan" id="22" weight="7.5">
+        <attvalues>
+          <attvalue for="5" value="3" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="2" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,shared_phone,shared_location" />
+          <attvalue for="11" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Suresh Yadav" id="23" weight="2.5">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="co_occurrence,shared_phone" />
+          <attvalue for="11" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Ankit Bose" id="24" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Priya Mehta" id="25" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Vikram Das" target="Rahul Sen" id="26" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Amit Verma" target="Suresh Yadav" id="27" weight="10.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="1" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="1" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="cdr_call,shared_phone,shared_vehicle,shared_location" />
+          <attvalue for="11" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="Amit Verma" target="Sameer Khan" id="28" weight="13.0">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="2" />
+          <attvalue for="7" value="4" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="2" />
+          <attvalue for="10" value="cdr_call,shared_phone,shared_location" />
+          <attvalue for="11" value="8" />
+        </attvalues>
+      </edge>
+      <edge source="Amit Verma" target="Ankit Bose" id="29" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Amit Verma" target="Priya Mehta" id="30" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Amit Verma" target="Rahul Sen" id="31" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Sameer Khan" target="Suresh Yadav" id="32" weight="11.0">
+        <attvalues>
+          <attvalue for="5" value="1" />
+          <attvalue for="6" value="2" />
+          <attvalue for="7" value="3" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="1" />
+          <attvalue for="10" value="co_occurrence,cdr_call,shared_phone,shared_location" />
+          <attvalue for="11" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="Sameer Khan" target="Ankit Bose" id="33" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Sameer Khan" target="Priya Mehta" id="34" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Sameer Khan" target="Rahul Sen" id="35" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Rahul Sen" target="Ankit Bose" id="36" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Rahul Sen" target="Priya Mehta" id="37" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Priya Mehta" target="Ankit Bose" id="38" weight="1.5">
+        <attvalues>
+          <attvalue for="5" value="0" />
+          <attvalue for="6" value="0" />
+          <attvalue for="7" value="1" />
+          <attvalue for="8" value="0" />
+          <attvalue for="9" value="0" />
+          <attvalue for="10" value="shared_phone" />
+          <attvalue for="11" value="1" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

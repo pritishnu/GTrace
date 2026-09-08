@@ -1,0 +1,1417 @@
+[
+  {
+    "doc_id": "REP-0001",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vehicle WB02AB4521",
+        "label": "ORGANIZATION",
+        "count": 1
+      },
+      {
+        "text": "WB02AB4521",
+        "label": "VEHICLE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0002",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      },
+      {
+        "text": "WB06CD7832",
+        "label": "VEHICLE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0003",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0004",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vehicle Wb12Ef2198",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "WB12EF2198",
+        "label": "VEHICLE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0005",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0006",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Siliguri",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0007",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Eastern Logistics",
+        "label": "ORGANIZATION",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0008",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0009",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "ORGANIZATION",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0010",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Howrah",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0011",
+    "entities": [
+      {
+        "text": "Rahul Sen",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Mumbai",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0012",
+    "entities": [
+      {
+        "text": "Priya Mehta",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Delhi",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0013",
+    "entities": [
+      {
+        "text": "Ankit Bose",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Patna",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0014",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Howrah",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0015",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Siliguri",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0016",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Howrah",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0017",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0018",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0019",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Asansol",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0020",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Howrah",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0021",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0022",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0023",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Asansol",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0024",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0025",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "ORGANIZATION",
+        "count": 1
+      },
+      {
+        "text": "WB06CD7832",
+        "label": "VEHICLE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0026",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "ORGANIZATION",
+        "count": 1
+      },
+      {
+        "text": "Howrah",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0027",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Durgapur",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0028",
+    "entities": [
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Kolkata",
+        "label": "GPE",
+        "count": 1
+      },
+      {
+        "text": "WB06CD7832",
+        "label": "VEHICLE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0029",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Siliguri",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "REP-0030",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 2
+      },
+      {
+        "text": "Asansol",
+        "label": "GPE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0001",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0002",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0003",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0004",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0005",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0006",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0007",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0008",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0009",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0010",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001005",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0011",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001005",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0012",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001005",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0013",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0014",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0015",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0016",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0017",
+    "entities": [
+      {
+        "text": "Vikram Das",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001003",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0018",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001007",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0019",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001007",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0020",
+    "entities": [
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001005",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0021",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0022",
+    "entities": [
+      {
+        "text": "Suresh Yadav",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001007",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0023",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0024",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Nitin Roy",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001005",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0025",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0026",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0027",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0028",
+    "entities": [
+      {
+        "text": "Ravi Sharma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001002",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0029",
+    "entities": [
+      {
+        "text": "Sameer Khan",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Amit Verma",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001004",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001006",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0060",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Rahul Sen",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001008",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0061",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Priya Mehta",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001009",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "doc_id": "CDR-0062",
+    "entities": [
+      {
+        "text": "Arjun Malhotra",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "Ankit Bose",
+        "label": "PERSON",
+        "count": 1
+      },
+      {
+        "text": "9000001001",
+        "label": "PHONE",
+        "count": 1
+      },
+      {
+        "text": "9000001010",
+        "label": "PHONE",
+        "count": 1
+      }
+    ]
+  }
+]

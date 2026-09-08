@@ -1,0 +1,114 @@
+[
+  {
+    "index": 0,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Vikram Das",
+      "role": "Associate",
+      "degree_centrality": 0.6667,
+      "betweenness_centrality": 0.2778,
+      "closeness_centrality": 0.6667,
+      "eigenvector_centrality": 0.4398,
+      "degree": 6
+    },
+    "prev_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "entry_hash": "c26b636dc9c140d9892fe1b91aa8b789f596612397e6d20a77a84bb16be1ea26"
+  },
+  {
+    "index": 1,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Suresh Yadav",
+      "role": "Associate",
+      "degree_centrality": 0.4444,
+      "betweenness_centrality": 0.1944,
+      "closeness_centrality": 0.5,
+      "eigenvector_centrality": 0.3328,
+      "degree": 4
+    },
+    "prev_hash": "c26b636dc9c140d9892fe1b91aa8b789f596612397e6d20a77a84bb16be1ea26",
+    "entry_hash": "249f62fcce67ff6182c61b1adcb719a753f1b526499a304fa0a076037cc196f3"
+  },
+  {
+    "index": 2,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Sameer Khan",
+      "role": "Associate",
+      "degree_centrality": 0.6667,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.6667,
+      "eigenvector_centrality": 0.4398,
+      "degree": 6
+    },
+    "prev_hash": "249f62fcce67ff6182c61b1adcb719a753f1b526499a304fa0a076037cc196f3",
+    "entry_hash": "bc67a6bfcb0b71c73237245e0b4c2896156a870a5cfd65c2711c235d35f63dd3"
+  },
+  {
+    "index": 3,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Arjun Malhotra",
+      "role": "Key Person",
+      "degree_centrality": 0.5556,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.5714,
+      "eigenvector_centrality": 0.3863,
+      "degree": 5
+    },
+    "prev_hash": "bc67a6bfcb0b71c73237245e0b4c2896156a870a5cfd65c2711c235d35f63dd3",
+    "entry_hash": "eb1886b20b6b63bd550c6319ce9263011812084db9d65b550308e8ab7c573b28"
+  },
+  {
+    "index": 4,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Amit Verma",
+      "role": "Associate",
+      "degree_centrality": 0.5556,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.5714,
+      "eigenvector_centrality": 0.3863,
+      "degree": 5
+    },
+    "prev_hash": "eb1886b20b6b63bd550c6319ce9263011812084db9d65b550308e8ab7c573b28",
+    "entry_hash": "2d1a26e4aa9e3a65b42b67dd5098a9db50d4903be12bc2e8dae7fdd30a3c2088"
+  },
+  {
+    "index": 5,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Ravi Sharma",
+      "role": "Associate",
+      "degree_centrality": 0.4444,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.5,
+      "eigenvector_centrality": 0.3193,
+      "degree": 4
+    },
+    "prev_hash": "2d1a26e4aa9e3a65b42b67dd5098a9db50d4903be12bc2e8dae7fdd30a3c2088",
+    "entry_hash": "bca9e8da4c330704bb8ecca2d3dfba77c090563f2bdc9816aa94e3e11ba45b0a"
+  },
+  {
+    "index": 6,
+    "timestamp": 1788864431.0713232,
+    "event_type": "key_player_flagged",
+    "details": {
+      "node_id": "Nitin Roy",
+      "role": "Associate",
+      "degree_centrality": 0.4444,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.5,
+      "eigenvector_centrality": 0.3193,
+      "degree": 4
+    },
+    "prev_hash": "bca9e8da4c330704bb8ecca2d3dfba77c090563f2bdc9816aa94e3e11ba45b0a",
+    "entry_hash": "fc7d9c3c155258f7c17ec094e5b3de394928e4dc7247bcd223d78a6431cd8252"
+  }
+]
