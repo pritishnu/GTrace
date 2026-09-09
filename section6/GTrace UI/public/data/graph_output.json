@@ -1,0 +1,1293 @@
+{
+  "metadata": {
+    "node_count": 10,
+    "edge_count": 39,
+    "source_file": "ner_output.json",
+    "edge_types": [
+      "co_occurrence",
+      "cdr_call",
+      "shared_phone",
+      "shared_vehicle",
+      "shared_location"
+    ],
+    "weights": {
+      "co_occurrence": 1.0,
+      "cdr_call": 2.0,
+      "shared_phone": 1.5,
+      "shared_vehicle": 2.5,
+      "shared_location": 1.5
+    }
+  },
+  "nodes": [
+    {
+      "id": "Arjun Malhotra",
+      "node_type": "PERSON",
+      "role": "Key Person",
+      "phone": "9000001001",
+      "city": "Howrah",
+      "doc_count": 26
+    },
+    {
+      "id": "Ravi Sharma",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001002",
+      "city": "Kolkata",
+      "doc_count": 16
+    },
+    {
+      "id": "Nitin Roy",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001005",
+      "city": "Siliguri",
+      "doc_count": 12
+    },
+    {
+      "id": "Vikram Das",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001003",
+      "city": "Asansol",
+      "doc_count": 17
+    },
+    {
+      "id": "Amit Verma",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001006",
+      "city": "Durgapur",
+      "doc_count": 16
+    },
+    {
+      "id": "Sameer Khan",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001004",
+      "city": "Siliguri",
+      "doc_count": 19
+    },
+    {
+      "id": "Suresh Yadav",
+      "node_type": "PERSON",
+      "role": "Associate",
+      "phone": "9000001007",
+      "city": "Howrah",
+      "doc_count": 8
+    },
+    {
+      "id": "Rahul Sen",
+      "node_type": "PERSON",
+      "role": "Unrelated",
+      "phone": "9000001008",
+      "city": "Howrah",
+      "doc_count": 2
+    },
+    {
+      "id": "Priya Mehta",
+      "node_type": "PERSON",
+      "role": "Unrelated",
+      "phone": "9000001009",
+      "city": "Delhi",
+      "doc_count": 2
+    },
+    {
+      "id": "Ankit Bose",
+      "node_type": "PERSON",
+      "role": "Unrelated",
+      "phone": "9000001010",
+      "city": "Kolkata",
+      "doc_count": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "Arjun Malhotra",
+      "target": "Ravi Sharma",
+      "weight": 17.5,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 3,
+      "shared_phone": 3,
+      "shared_vehicle": 2,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0001"
+        },
+        {
+          "doc_id": "REP-0014"
+        },
+        {
+          "doc_id": "CDR-0001"
+        },
+        {
+          "doc_id": "CDR-0002"
+        },
+        {
+          "doc_id": "CDR-0003"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB02AB4521"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Vikram Das",
+      "weight": 14.0,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 3,
+      "shared_phone": 3,
+      "shared_vehicle": 0,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0003"
+        },
+        {
+          "doc_id": "REP-0009"
+        },
+        {
+          "doc_id": "CDR-0004"
+        },
+        {
+          "doc_id": "CDR-0005"
+        },
+        {
+          "doc_id": "CDR-0006"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001003"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Sameer Khan",
+      "weight": 16.5,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 3,
+      "cdr_call": 3,
+      "shared_phone": 4,
+      "shared_vehicle": 0,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0005"
+        },
+        {
+          "doc_id": "REP-0009"
+        },
+        {
+          "doc_id": "REP-0019"
+        },
+        {
+          "doc_id": "CDR-0007"
+        },
+        {
+          "doc_id": "CDR-0008"
+        },
+        {
+          "doc_id": "CDR-0009"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Suresh Yadav",
+      "weight": 8.5,
+      "edge_types": [
+        "co_occurrence",
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 3,
+      "cdr_call": 0,
+      "shared_phone": 2,
+      "shared_vehicle": 1,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0016"
+        },
+        {
+          "doc_id": "REP-0024"
+        },
+        {
+          "doc_id": "REP-0028"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Amit Verma",
+      "weight": 16.0,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_vehicle",
+        "shared_location"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 2,
+      "shared_phone": 4,
+      "shared_vehicle": 1,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0020"
+        },
+        {
+          "doc_id": "REP-0030"
+        },
+        {
+          "doc_id": "CDR-0021"
+        },
+        {
+          "doc_id": "CDR-0026"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001003"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Rahul Sen",
+      "weight": 5.0,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 1,
+      "shared_phone": 2,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "CDR-0060"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001008"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Priya Mehta",
+      "weight": 5.0,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 1,
+      "shared_phone": 2,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "CDR-0061"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001009"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Ankit Bose",
+      "weight": 5.0,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 1,
+      "shared_phone": 2,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "CDR-0062"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001010"
+        }
+      ]
+    },
+    {
+      "source": "Arjun Malhotra",
+      "target": "Nitin Roy",
+      "weight": 5.5,
+      "edge_types": [
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 2,
+      "shared_vehicle": 1,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Nitin Roy",
+      "weight": 17.0,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 4,
+      "shared_phone": 3,
+      "shared_vehicle": 1,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0002"
+        },
+        {
+          "doc_id": "REP-0010"
+        },
+        {
+          "doc_id": "CDR-0010"
+        },
+        {
+          "doc_id": "CDR-0011"
+        },
+        {
+          "doc_id": "CDR-0012"
+        },
+        {
+          "doc_id": "CDR-0024"
+        },
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001005"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Vikram Das",
+      "weight": 2.5,
+      "edge_types": [
+        "co_occurrence",
+        "shared_phone"
+      ],
+      "co_occurrence": 1,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0026"
+        },
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Sameer Khan",
+      "weight": 12.0,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 3,
+      "shared_phone": 4,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "CDR-0025"
+        },
+        {
+          "doc_id": "CDR-0027"
+        },
+        {
+          "doc_id": "CDR-0028"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001005"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Amit Verma",
+      "weight": 5.5,
+      "edge_types": [
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 2,
+      "shared_vehicle": 1,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Priya Mehta",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Rahul Sen",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Ravi Sharma",
+      "target": "Suresh Yadav",
+      "weight": 4.0,
+      "edge_types": [
+        "shared_phone",
+        "shared_vehicle"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 1,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        }
+      ]
+    },
+    {
+      "source": "Nitin Roy",
+      "target": "Amit Verma",
+      "weight": 7.5,
+      "edge_types": [
+        "co_occurrence",
+        "shared_phone",
+        "shared_vehicle",
+        "shared_location"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 1,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0015"
+        },
+        {
+          "doc_id": "REP-0025"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        },
+        {
+          "location": "siliguri"
+        }
+      ]
+    },
+    {
+      "source": "Nitin Roy",
+      "target": "Vikram Das",
+      "weight": 1.0,
+      "edge_types": [
+        "co_occurrence"
+      ],
+      "co_occurrence": 1,
+      "cdr_call": 0,
+      "shared_phone": 0,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0018"
+        }
+      ]
+    },
+    {
+      "source": "Nitin Roy",
+      "target": "Sameer Khan",
+      "weight": 10.0,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 1,
+      "shared_phone": 3,
+      "shared_vehicle": 0,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0027"
+        },
+        {
+          "doc_id": "REP-0029"
+        },
+        {
+          "doc_id": "CDR-0020"
+        },
+        {
+          "phone": "9000001002"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001005"
+        },
+        {
+          "location": "siliguri"
+        }
+      ]
+    },
+    {
+      "source": "Nitin Roy",
+      "target": "Suresh Yadav",
+      "weight": 5.5,
+      "edge_types": [
+        "shared_phone",
+        "shared_vehicle",
+        "shared_location"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 1,
+      "shared_location": 1,
+      "details": [
+        {
+          "phone": "9000001004"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        },
+        {
+          "location": "siliguri"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Amit Verma",
+      "weight": 20.5,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_vehicle",
+        "shared_location"
+      ],
+      "co_occurrence": 2,
+      "cdr_call": 5,
+      "shared_phone": 3,
+      "shared_vehicle": 1,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0004"
+        },
+        {
+          "doc_id": "REP-0022"
+        },
+        {
+          "doc_id": "CDR-0013"
+        },
+        {
+          "doc_id": "CDR-0014"
+        },
+        {
+          "doc_id": "CDR-0015"
+        },
+        {
+          "doc_id": "CDR-0016"
+        },
+        {
+          "doc_id": "CDR-0017"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001003"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "vehicle": "WB12EF2198"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Sameer Khan",
+      "weight": 7.5,
+      "edge_types": [
+        "co_occurrence",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 3,
+      "cdr_call": 0,
+      "shared_phone": 2,
+      "shared_vehicle": 0,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0009"
+        },
+        {
+          "doc_id": "REP-0021"
+        },
+        {
+          "doc_id": "REP-0023"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Suresh Yadav",
+      "weight": 2.5,
+      "edge_types": [
+        "co_occurrence",
+        "shared_phone"
+      ],
+      "co_occurrence": 1,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "doc_id": "REP-0017"
+        },
+        {
+          "phone": "9000001006"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Priya Mehta",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Vikram Das",
+      "target": "Rahul Sen",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Amit Verma",
+      "target": "Suresh Yadav",
+      "weight": 10.5,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone",
+        "shared_vehicle",
+        "shared_location"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 1,
+      "shared_phone": 3,
+      "shared_vehicle": 1,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "CDR-0022"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "phone": "9000001007"
+        },
+        {
+          "vehicle": "WB06CD7832"
+        },
+        {
+          "location": "siliguri"
+        }
+      ]
+    },
+    {
+      "source": "Amit Verma",
+      "target": "Sameer Khan",
+      "weight": 13.0,
+      "edge_types": [
+        "cdr_call",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 2,
+      "shared_phone": 4,
+      "shared_vehicle": 0,
+      "shared_location": 2,
+      "details": [
+        {
+          "doc_id": "CDR-0023"
+        },
+        {
+          "doc_id": "CDR-0029"
+        },
+        {
+          "phone": "9000001001"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "phone": "9000001007"
+        },
+        {
+          "location": "siliguri"
+        },
+        {
+          "location": "asansol"
+        }
+      ]
+    },
+    {
+      "source": "Amit Verma",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Amit Verma",
+      "target": "Priya Mehta",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Amit Verma",
+      "target": "Rahul Sen",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Sameer Khan",
+      "target": "Suresh Yadav",
+      "weight": 11.0,
+      "edge_types": [
+        "co_occurrence",
+        "cdr_call",
+        "shared_phone",
+        "shared_location"
+      ],
+      "co_occurrence": 1,
+      "cdr_call": 2,
+      "shared_phone": 3,
+      "shared_vehicle": 0,
+      "shared_location": 1,
+      "details": [
+        {
+          "doc_id": "REP-0006"
+        },
+        {
+          "doc_id": "CDR-0018"
+        },
+        {
+          "doc_id": "CDR-0019"
+        },
+        {
+          "phone": "9000001004"
+        },
+        {
+          "phone": "9000001006"
+        },
+        {
+          "phone": "9000001007"
+        },
+        {
+          "location": "siliguri"
+        }
+      ]
+    },
+    {
+      "source": "Sameer Khan",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Sameer Khan",
+      "target": "Priya Mehta",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Sameer Khan",
+      "target": "Rahul Sen",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Rahul Sen",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Rahul Sen",
+      "target": "Priya Mehta",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    },
+    {
+      "source": "Priya Mehta",
+      "target": "Ankit Bose",
+      "weight": 1.5,
+      "edge_types": [
+        "shared_phone"
+      ],
+      "co_occurrence": 0,
+      "cdr_call": 0,
+      "shared_phone": 1,
+      "shared_vehicle": 0,
+      "shared_location": 0,
+      "details": [
+        {
+          "phone": "9000001001"
+        }
+      ]
+    }
+  ],
+  "centrality": [
+    {
+      "name": "Vikram Das",
+      "role": "Associate",
+      "degree": 9,
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.3333,
+      "closeness_centrality": 1.0,
+      "eigenvector_centrality": 0.3308
+    },
+    {
+      "name": "Rahul Sen",
+      "role": "Unrelated",
+      "degree": 7,
+      "degree_centrality": 0.7778,
+      "betweenness_centrality": 0.1181,
+      "closeness_centrality": 0.8182,
+      "eigenvector_centrality": 0.0781
+    },
+    {
+      "name": "Priya Mehta",
+      "role": "Unrelated",
+      "degree": 7,
+      "degree_centrality": 0.7778,
+      "betweenness_centrality": 0.1181,
+      "closeness_centrality": 0.8182,
+      "eigenvector_centrality": 0.0781
+    },
+    {
+      "name": "Ankit Bose",
+      "role": "Unrelated",
+      "degree": 7,
+      "degree_centrality": 0.7778,
+      "betweenness_centrality": 0.1181,
+      "closeness_centrality": 0.8182,
+      "eigenvector_centrality": 0.0781
+    },
+    {
+      "name": "Nitin Roy",
+      "role": "Associate",
+      "degree": 6,
+      "degree_centrality": 0.6667,
+      "betweenness_centrality": 0.0069,
+      "closeness_centrality": 0.75,
+      "eigenvector_centrality": 0.286
+    },
+    {
+      "name": "Arjun Malhotra",
+      "role": "Key Person",
+      "degree": 9,
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 1.0,
+      "eigenvector_centrality": 0.4737
+    },
+    {
+      "name": "Ravi Sharma",
+      "role": "Associate",
+      "degree": 9,
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 1.0,
+      "eigenvector_centrality": 0.3623
+    },
+    {
+      "name": "Amit Verma",
+      "role": "Associate",
+      "degree": 9,
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 1.0,
+      "eigenvector_centrality": 0.431
+    },
+    {
+      "name": "Sameer Khan",
+      "role": "Associate",
+      "degree": 9,
+      "degree_centrality": 1.0,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 1.0,
+      "eigenvector_centrality": 0.4197
+    },
+    {
+      "name": "Suresh Yadav",
+      "role": "Associate",
+      "degree": 6,
+      "degree_centrality": 0.6667,
+      "betweenness_centrality": 0.0,
+      "closeness_centrality": 0.75,
+      "eigenvector_centrality": 0.2702
+    }
+  ]
+}

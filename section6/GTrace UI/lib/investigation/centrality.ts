@@ -1,118 +1,101 @@
-import { links, nodes, type EntityLink, type EntityNode } from "./graph-data";
+/**
+ * centrality.ts
+ * Derives ScoredNode objects from the pre-computed centrality list embedded
+ * in graph_output.json (data.centrality[]).  No client-side algorithm needed.
+ */
 
-export interface CentralityScores {
+import type { PipelineGraph, PipelineEdge } from "./graph-data";
+import { getNeighbours } from "./graph-data";
+
+// ─── Public types ─────────────────────────────────────────────────────────────
+
+export interface ScoredNode {
+  id: string;
+  name: string;
+  role: string;
+  // Raw node attributes
+  phone?: string;
+  city?: string;
+  doc_count?: number;
+  // Centrality
   degree: number;
+  degree_centrality: number;
+  betweenness_centrality: number;
+  closeness_centrality: number;
+  eigenvector_centrality: number;
+  // Derived normalised [0-1] for sizing/colouring
   degreeNorm: number;
-  betweenness: number;
   betweennessNorm: number;
-}
-
-export interface ScoredNode extends EntityNode, CentralityScores {
-  neighbors: string[];
-}
-
-function buildAdjacency(nodeList: EntityNode[], linkList: EntityLink[]) {
-  const adj = new Map<string, Set<string>>();
-  nodeList.forEach((n) => adj.set(n.id, new Set()));
-  linkList.forEach((l) => {
-    adj.get(l.source)?.add(l.target);
-    adj.get(l.target)?.add(l.source);
-  });
-  return adj;
-}
-
-/** Brandes' algorithm for betweenness centrality on an unweighted, undirected graph. */
-function betweenness(adj: Map<string, Set<string>>): Map<string, number> {
-  const ids = [...adj.keys()];
-  const cb = new Map<string, number>(ids.map((id) => [id, 0]));
-
-  for (const s of ids) {
-    const stack: string[] = [];
-    const pred = new Map<string, string[]>(ids.map((id) => [id, []]));
-    const sigma = new Map<string, number>(ids.map((id) => [id, 0]));
-    const dist = new Map<string, number>(ids.map((id) => [id, -1]));
-    sigma.set(s, 1);
-    dist.set(s, 0);
-    const queue: string[] = [s];
-
-    while (queue.length) {
-      const v = queue.shift()!;
-      stack.push(v);
-      for (const w of adj.get(v) ?? []) {
-        if (dist.get(w)! < 0) {
-          queue.push(w);
-          dist.set(w, dist.get(v)! + 1);
-        }
-        if (dist.get(w) === dist.get(v)! + 1) {
-          sigma.set(w, sigma.get(w)! + sigma.get(v)!);
-          pred.get(w)!.push(v);
-        }
-      }
-    }
-
-    const delta = new Map<string, number>(ids.map((id) => [id, 0]));
-    while (stack.length) {
-      const w = stack.pop()!;
-      for (const v of pred.get(w)!) {
-        delta.set(v, delta.get(v)! + (sigma.get(v)! / sigma.get(w)!) * (1 + delta.get(w)!));
-      }
-      if (w !== s) cb.set(w, cb.get(w)! + delta.get(w)!);
-    }
-  }
-
-  // Undirected: each pair counted twice
-  cb.forEach((v, k) => cb.set(k, v / 2));
-  return cb;
-}
-
-let cache: ScoredNode[] | null = null;
-
-export function getScoredNodes(): ScoredNode[] {
-  if (cache) return cache;
-  const adj = buildAdjacency(nodes, links);
-  const bc = betweenness(adj);
-  const maxDeg = Math.max(...[...adj.values()].map((s) => s.size));
-  const maxBc = Math.max(...bc.values()) || 1;
-
-  cache = nodes.map((n) => {
-    const neighbors = [...(adj.get(n.id) ?? [])];
-    const degree = neighbors.length;
-    const b = bc.get(n.id) ?? 0;
-    return {
-      ...n,
-      neighbors,
-      degree,
-      degreeNorm: degree / maxDeg,
-      betweenness: Math.round(b * 10) / 10,
-      betweennessNorm: b / maxBc,
-    };
-  });
-  return cache;
-}
-
-export function getScoredNode(id: string): ScoredNode | undefined {
-  return getScoredNodes().find((n) => n.id === id);
-}
-
-export function getTopPlayers(count = 5): string[] {
-  return [...getScoredNodes()]
-    .sort((a, b) => b.degreeNorm + b.betweennessNorm - (a.degreeNorm + a.betweennessNorm))
-    .slice(0, count)
-    .map((n) => n.id);
+  // Neighbours (node IDs)
+  neighbours: string[];
 }
 
 export type RiskLevel = "Key Player" | "Mid-Tier" | "Associate" | "Peripheral";
 
-export function riskLevel(n: ScoredNode): RiskLevel {
-  const score = n.degreeNorm * 0.5 + n.betweennessNorm * 0.5;
-  if (score >= 0.6) return "Key Player";
-  if (score >= 0.25) return "Mid-Tier";
-  if (n.degree >= 2) return "Associate";
-  return "Peripheral";
+// ─── Build ScoredNode list from a loaded PipelineGraph ───────────────────────
+
+export function buildScoredNodes(graph: PipelineGraph): ScoredNode[] {
+  const { nodes, edges, centrality } = graph;
+
+  // Build a lookup: name → centrality entry
+  const centralityMap = new Map(centrality.map((c) => [c.name, c]));
+
+  // Build a lookup: name → node attributes
+  const nodeMap = new Map(nodes.map((n) => [n.id, n]));
+
+  const maxBtw = Math.max(...centrality.map((c) => c.betweenness_centrality), 0.001);
+  const maxDeg = Math.max(...centrality.map((c) => c.degree_centrality), 0.001);
+
+  return nodes.map((n) => {
+    const c = centralityMap.get(n.id);
+    const attrs = nodeMap.get(n.id);
+    const btw = c?.betweenness_centrality ?? 0;
+    const deg = c?.degree_centrality ?? 0;
+    return {
+      id: n.id,
+      name: n.id,
+      role: n.role,
+      phone: attrs?.phone,
+      city: attrs?.city,
+      doc_count: attrs?.doc_count,
+      degree: c?.degree ?? 0,
+      degree_centrality: deg,
+      betweenness_centrality: btw,
+      closeness_centrality: c?.closeness_centrality ?? 0,
+      eigenvector_centrality: c?.eigenvector_centrality ?? 0,
+      degreeNorm: deg / maxDeg,
+      betweennessNorm: btw / maxBtw,
+      neighbours: getNeighbours(n.id, edges),
+    };
+  });
 }
 
-export function getLinkRelation(a: string, b: string): string | undefined {
-  return links.find(
-    (l) => (l.source === a && l.target === b) || (l.source === b && l.target === a),
-  )?.relation;
+// ─── Derived helpers ──────────────────────────────────────────────────────────
+
+export function getTopPlayers(scored: ScoredNode[], count = 5): string[] {
+  return [...scored]
+    .sort(
+      (a, b) =>
+        b.betweenness_centrality + b.degree_centrality -
+        (a.betweenness_centrality + a.degree_centrality),
+    )
+    .slice(0, count)
+    .map((n) => n.id);
+}
+
+/** Top 10% by betweenness = "flagged" tier (rendered red). */
+export function isFlaggedNode(node: ScoredNode, allNodes: ScoredNode[]): boolean {
+  const sorted = [...allNodes].sort(
+    (a, b) => b.betweenness_centrality - a.betweenness_centrality,
+  );
+  const cutoff = Math.max(1, Math.ceil(sorted.length * 0.1));
+  return sorted.slice(0, cutoff).some((n) => n.id === node.id);
+}
+
+export function riskLevel(n: ScoredNode): RiskLevel {
+  const score = n.degreeNorm * 0.4 + n.betweennessNorm * 0.6;
+  if (score >= 0.5) return "Key Player";
+  if (score >= 0.2) return "Mid-Tier";
+  if (n.degree >= 2) return "Associate";
+  return "Peripheral";
 }

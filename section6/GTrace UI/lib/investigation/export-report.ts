@@ -1,11 +1,14 @@
-import { getScoredNodes, riskLevel } from "./centrality";
-import { auditEntries } from "./audit-log";
+/**
+ * export-report.ts
+ * Exports a minimal hand-built PDF from live pipeline data.
+ */
+import { type ScoredNode, riskLevel } from "./centrality";
+import { type PipelineAuditEntry, formatTimestamp, truncateHash } from "./audit-log";
 
 function escapePdfText(s: string) {
   return s.replace(/\\/g, "\\\\").replace(/\(/g, "\\(").replace(/\)/g, "\\)").replace(/[^\x20-\x7E]/g, "?");
 }
 
-/** Builds a minimal single-page PDF by hand so the demo export produces a real, openable file. */
 function buildPdf(lines: string[]): Blob {
   const content = [
     "BT",
@@ -36,36 +39,45 @@ function buildPdf(lines: string[]): Blob {
     pdf += `${String(o).padStart(10, "0")} 00000 n \n`;
   });
   pdf += `trailer\n<< /Size ${objects.length + 1} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF`;
-
   return new Blob([pdf], { type: "application/pdf" });
 }
 
-export function exportInvestigationReport() {
-  const scored = [...getScoredNodes()].sort((a, b) => b.degree - a.degree).slice(0, 12);
+export function exportInvestigationReport(
+  scoredNodes: ScoredNode[],
+  auditEntries: PipelineAuditEntry[],
+  integrityStatus: string,
+) {
+  const top = [...scoredNodes]
+    .sort((a, b) => b.betweenness_centrality - a.betweenness_centrality)
+    .slice(0, 12);
+
   const lines = [
     "GTRACE INVESTIGATOR CONSOLE - NETWORK ANALYSIS REPORT",
-    "Case: OP-KESTREL    Generated: " + new Date().toISOString(),
+    "Case: GTRACE    Generated: " + new Date().toISOString(),
     "Classification: RESTRICTED",
     "",
-    "TOP ENTITIES BY CENTRALITY",
+    "TOP ENTITIES BY BETWEENNESS CENTRALITY",
     "----------------------------------------------------------------",
-    ...scored.map(
+    ...top.map(
       (n) =>
-        `${n.name.padEnd(28)} ${n.type.padEnd(13)} deg=${String(n.degree).padStart(2)}  btw=${String(n.betweenness).padStart(6)}  ${riskLevel(n)}`,
+        `${n.name.padEnd(22)} ${n.role.padEnd(12)} deg=${String(n.degree).padStart(2)}  btw=${n.betweenness_centrality.toFixed(4)}  ${riskLevel(n)}`,
     ),
     "",
-    "AUDIT CHAIN (latest entries)",
+    `CHAIN INTEGRITY: ${integrityStatus.toUpperCase()}`,
     "----------------------------------------------------------------",
-    ...auditEntries.slice(-6).map((e) => `${e.timestamp}  ${e.action.slice(0, 44).padEnd(44)} ${e.hash.slice(0, 12)}`),
+    ...auditEntries.slice(-6).map(
+      (e) =>
+        `${formatTimestamp(e.timestamp).slice(0, 19)}  ${e.details.node_id.padEnd(18)} ${truncateHash(e.entry_hash)}`,
+    ),
     "",
-    "This document is generated from mock case data for demonstration.",
+    "Generated from GTrace pipeline (section4/graph_output.json + section5/audit_log.json).",
   ];
 
   const blob = buildPdf(lines);
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "OP-KESTREL_report.pdf";
+  a.download = "GTrace_report.pdf";
   document.body.appendChild(a);
   a.click();
   a.remove();

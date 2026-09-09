@@ -8,6 +8,8 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { verifyChain } from "@/lib/investigation/audit-log";
+import { useGraphStore } from "@/lib/investigation/data-store";
 
 export type IntegrityStatus = "idle" | "checking" | "verified" | "tampered";
 
@@ -15,13 +17,12 @@ interface InvestigationState {
   selectedNodeId: string | null;
   highlightTopPlayers: boolean;
   integrity: IntegrityStatus;
-  tamperMode: boolean;
+  brokenIndex: number | null;    // which audit entry broke the chain
   refreshKey: number;
   searchQuery: string;
   selectNode: (id: string | null) => void;
   toggleTopPlayers: () => void;
   runIntegrityCheck: () => void;
-  setTamperMode: (v: boolean) => void;
   refreshData: () => void;
   clearSelection: () => void;
   setSearchQuery: (q: string) => void;
@@ -30,10 +31,12 @@ interface InvestigationState {
 const InvestigationContext = createContext<InvestigationState | null>(null);
 
 export function InvestigationProvider({ children }: { children: ReactNode }) {
+  const { reload, auditLog } = useGraphStore();
+
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [highlightTopPlayers, setHighlightTopPlayers] = useState(false);
   const [integrity, setIntegrity] = useState<IntegrityStatus>("idle");
-  const [tamperMode, setTamperMode] = useState(false);
+  const [brokenIndex, setBrokenIndex] = useState<number | null>(null);
   const [refreshKey, setRefreshKey] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -44,25 +47,32 @@ export function InvestigationProvider({ children }: { children: ReactNode }) {
     setHighlightTopPlayers(false);
     setSearchQuery("");
   }, []);
-  const refreshData = useCallback(() => setRefreshKey((k) => k + 1), []);
+
+  const refreshData = useCallback(() => {
+    reload();
+    setRefreshKey((k) => k + 1);
+  }, [reload]);
 
   const runIntegrityCheck = useCallback(() => {
     setIntegrity("checking");
-    setTimeout(() => setIntegrity(tamperMode ? "tampered" : "verified"), 1400);
-  }, [tamperMode]);
+    setBrokenIndex(null);
+    void verifyChain(auditLog).then((result) => {
+      setBrokenIndex(result.brokenIndex);
+      setIntegrity(result.ok ? "verified" : "tampered");
+    });
+  }, [auditLog]);
 
   const value = useMemo<InvestigationState>(
     () => ({
       selectedNodeId,
       highlightTopPlayers,
       integrity,
-      tamperMode,
+      brokenIndex,
       refreshKey,
       searchQuery,
       selectNode,
       toggleTopPlayers,
       runIntegrityCheck,
-      setTamperMode,
       refreshData,
       clearSelection,
       setSearchQuery,
@@ -71,7 +81,7 @@ export function InvestigationProvider({ children }: { children: ReactNode }) {
       selectedNodeId,
       highlightTopPlayers,
       integrity,
-      tamperMode,
+      brokenIndex,
       refreshKey,
       searchQuery,
       selectNode,

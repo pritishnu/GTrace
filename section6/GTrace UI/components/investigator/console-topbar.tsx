@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Crosshair, RefreshCw, Download, Eraser, Bug } from "lucide-react";
+import { Search, Crosshair, RefreshCw, Download, Eraser } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { useInvestigation } from "./investigation-context";
 import { IntegrityBadge } from "./integrity-badge";
 import { exportInvestigationReport } from "@/lib/investigation/export-report";
+import { useGraphStore } from "@/lib/investigation/data-store";
 
 export function ConsoleTopbar() {
   const {
@@ -19,21 +20,25 @@ export function ConsoleTopbar() {
     toggleTopPlayers,
     refreshData,
     clearSelection,
-    tamperMode,
-    setTamperMode,
+    integrity,
   } = useInvestigation();
+  const { scoredNodes, auditLog, loadState } = useGraphStore();
   const [spinning, setSpinning] = useState(false);
 
   function handleRefresh() {
     setSpinning(true);
     refreshData();
-    toast("Data refreshed", { description: "Graph re-seeded from case file OP-KESTREL." });
-    setTimeout(() => setSpinning(false), 900);
+    toast("Data refreshed", { description: "Re-reading graph_output.json and audit_log.json." });
+    setTimeout(() => setSpinning(false), 1200);
   }
 
   function handleExport() {
-    exportInvestigationReport();
-    toast("Report exported", { description: "OP-KESTREL_report.pdf saved to downloads." });
+    if (scoredNodes.length === 0) {
+      toast.error("No data", { description: "Pipeline data not yet loaded." });
+      return;
+    }
+    exportInvestigationReport(scoredNodes, auditLog, integrity);
+    toast("Report exported", { description: "GTrace_report.pdf saved to downloads." });
   }
 
   return (
@@ -44,7 +49,7 @@ export function ConsoleTopbar() {
           type="search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Search entities..."
+          placeholder="Search entities…"
           aria-label="Search entities"
           className="h-8 rounded-none border-border bg-background/60 pl-8 font-mono text-xs focus-visible:border-highlight focus-visible:ring-highlight/50"
         />
@@ -70,7 +75,7 @@ export function ConsoleTopbar() {
               <span className="lg:hidden">Top</span>
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Spotlight highest-centrality nodes</TooltipContent>
+          <TooltipContent>Spotlight highest-betweenness nodes</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -82,10 +87,10 @@ export function ConsoleTopbar() {
               aria-label="Refresh data"
               className="size-8 rounded-none border-border bg-transparent hover:bg-accent"
             >
-              <RefreshCw className={cn("size-3.5", spinning && "animate-spin")} />
+              <RefreshCw className={cn("size-3.5", (spinning || loadState === "loading") && "animate-spin")} />
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Refresh data</TooltipContent>
+          <TooltipContent>Re-read JSON files (no page reload)</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -100,7 +105,7 @@ export function ConsoleTopbar() {
               <span className="hidden lg:inline">Export Report</span>
             </Button>
           </TooltipTrigger>
-          <TooltipContent>Export PDF report</TooltipContent>
+          <TooltipContent>Export PDF report from live data</TooltipContent>
         </Tooltip>
 
         <Tooltip>
@@ -116,26 +121,6 @@ export function ConsoleTopbar() {
             </Button>
           </TooltipTrigger>
           <TooltipContent>Reset selection and highlights</TooltipContent>
-        </Tooltip>
-
-        <Tooltip>
-          <TooltipTrigger asChild>
-            <button
-              type="button"
-              onClick={() => setTamperMode(!tamperMode)}
-              aria-pressed={tamperMode}
-              aria-label="Toggle tamper demo mode"
-              className={cn(
-                "ml-1 flex size-8 items-center justify-center border border-transparent text-muted-foreground/50 transition-colors hover:text-muted-foreground",
-                tamperMode && "border-destructive/50 text-red-400",
-              )}
-            >
-              <Bug className="size-3.5" />
-            </button>
-          </TooltipTrigger>
-          <TooltipContent>
-            Demo: {tamperMode ? "next check reports tampering" : "simulate tampered chain"}
-          </TooltipContent>
         </Tooltip>
       </div>
     </header>

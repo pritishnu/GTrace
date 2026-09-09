@@ -12,7 +12,7 @@ interface IntegrityBadgeProps {
 }
 
 export function IntegrityBadge({ label = "Verify Integrity", className }: IntegrityBadgeProps) {
-  const { integrity, runIntegrityCheck } = useInvestigation();
+  const { integrity, brokenIndex, runIntegrityCheck } = useInvestigation();
 
   if (integrity === "verified") {
     return (
@@ -26,25 +26,32 @@ export function IntegrityBadge({ label = "Verify Integrity", className }: Integr
         aria-live="polite"
       >
         <ShieldCheck className="size-3.5" />
-        Verified <span aria-hidden="true" style={{ fontFamily: "system-ui, sans-serif" }}>{"✓"}</span>
+        Chain Verified <span aria-hidden="true" style={{ fontFamily: "system-ui, sans-serif" }}>{"✓"}</span>
       </button>
     );
   }
 
   if (integrity === "tampered") {
     return (
-      <button
-        type="button"
-        onClick={runIntegrityCheck}
-        className={cn(
-          "inline-flex h-8 items-center gap-1.5 border border-destructive/60 bg-destructive/10 px-3 text-xs font-medium text-red-300 glow-danger transition-colors hover:bg-destructive/15",
-          className,
+      <div className="flex flex-col gap-0.5">
+        <button
+          type="button"
+          onClick={runIntegrityCheck}
+          className={cn(
+            "inline-flex h-8 items-center gap-1.5 border border-destructive/60 bg-destructive/10 px-3 text-xs font-medium text-red-300 glow-danger transition-colors hover:bg-destructive/15",
+            className,
+          )}
+          aria-live="assertive"
+        >
+          <ShieldX className="size-3.5" />
+          Chain Tampered <span aria-hidden="true" style={{ fontFamily: "system-ui, sans-serif" }}>{"✗"}</span>
+        </button>
+        {brokenIndex !== null && (
+          <p className="pl-1 font-mono text-[10px] text-red-400">
+            ↳ entry #{brokenIndex} broke the chain
+          </p>
         )}
-        aria-live="assertive"
-      >
-        <ShieldX className="size-3.5" />
-        Tampered <span aria-hidden="true" style={{ fontFamily: "system-ui, sans-serif" }}>{"✗"}</span>
-      </button>
+      </div>
     );
   }
 
