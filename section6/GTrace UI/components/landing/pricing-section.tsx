@@ -2,53 +2,54 @@
 
 import { useState } from "react";
 import { ArrowRight, Check } from "lucide-react";
+import Link from "next/link";
 
 const plans = [
   {
-    name: "Starter",
-    description: "For individuals and small projects",
+    name: "Pilot",
+    description: "For individual investigators and small units",
     price: { monthly: 0, annual: 0 },
     features: [
-      "Up to 3 projects",
-      "1GB storage",
-      "Community support",
-      "Basic analytics",
-      "SSL certificates",
+      "Single investigator access",
+      "Up to 500 entities",
+      "Force-directed graph view",
+      "Basic centrality analysis",
+      "PDF report export",
     ],
-    cta: "Start free",
+    cta: "Start pilot",
     popular: false,
   },
   {
-    name: "Pro",
-    description: "For growing teams and businesses",
-    price: { monthly: 29, annual: 24 },
+    name: "Department",
+    description: "For crime branches and investigation teams",
+    price: { monthly: null, annual: null },
     features: [
-      "Unlimited projects",
-      "100GB storage",
+      "Multi-investigator access",
+      "Unlimited entities",
+      "Full centrality algorithms",
+      "Hash-chain audit log",
+      "Role-based access control",
+      "One-click integrity verification",
       "Priority support",
-      "Advanced analytics",
-      "Custom domains",
-      "Team collaboration",
-      "API access",
     ],
-    cta: "Start trial",
+    cta: "Contact NCRB",
     popular: true,
   },
   {
-    name: "Enterprise",
-    description: "For large-scale operations",
+    name: "State-Level",
+    description: "For state police and central agencies",
     price: { monthly: null, annual: null },
     features: [
-      "Everything in Pro",
-      "Unlimited storage",
-      "24/7 dedicated support",
-      "Custom integrations",
-      "SLA guarantee",
-      "On-premise option",
-      "Security audit",
-      "Custom contracts",
+      "Everything in Department",
+      "Cross-district data federation",
+      "NCRB data integration",
+      "Custom API access",
+      "On-premise deployment option",
+      "Dedicated SLA",
+      "Training & onboarding",
+      "Custom compliance audit",
     ],
-    cta: "Contact sales",
+    cta: "Request briefing",
     popular: false,
   },
 ];
@@ -62,15 +63,15 @@ export function PricingSection() {
         {/* Header */}
         <div className="max-w-3xl mb-20">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase block mb-6">
-            Pricing
+            Deployment Tiers
           </span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground mb-6">
-            Simple, transparent
+            Scalable deployment
             <br />
-            <span className="text-stroke">pricing</span>
+            <span className="text-stroke">for every unit</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl">
-            Start free and scale as you grow. No hidden fees, no surprises.
+            From individual investigators to state-level agencies. Start with a pilot, scale as needed.
           </p>
         </div>
 
@@ -136,9 +137,9 @@ export function PricingSection() {
                 {plan.price.monthly !== null ? (
                   <div className="flex items-baseline gap-2">
                     <span className="font-display text-5xl lg:text-6xl text-foreground">
-                      ${isAnnual ? plan.price.annual : plan.price.monthly}
+                      Free
                     </span>
-                    <span className="text-muted-foreground">/month</span>
+                    <span className="text-muted-foreground">pilot</span>
                   </div>
                 ) : (
                   <span className="font-display text-4xl text-foreground">Custom</span>
@@ -156,25 +157,27 @@ export function PricingSection() {
               </ul>
 
               {/* CTA */}
-              <button
-                className={`w-full py-4 flex items-center justify-center gap-2 text-sm font-medium transition-all group ${
-                  plan.popular
-                    ? "bg-foreground text-primary-foreground hover:bg-foreground/90"
-                    : "border border-foreground/20 text-foreground hover:border-foreground hover:bg-foreground/5"
-                }`}
-              >
-                {plan.cta}
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </button>
+              <Link href={plan.cta === "Start pilot" ? "/dashboard" : "/login"}>
+                <button
+                  className={`w-full py-4 flex items-center justify-center gap-2 text-sm font-medium transition-all group ${
+                    plan.popular
+                      ? "bg-foreground text-primary-foreground hover:bg-foreground/90"
+                      : "border border-foreground/20 text-foreground hover:border-foreground hover:bg-foreground/5"
+                  }`}
+                >
+                  {plan.cta}
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </button>
+              </Link>
             </div>
           ))}
         </div>
 
         {/* Bottom Note */}
         <p className="mt-12 text-center text-sm text-muted-foreground">
-          All plans include automatic updates, HTTPS, and DDoS protection.{" "}
+          All tiers include encrypted data storage and tamper-evident audit logging.{" "}
           <a href="#" className="underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+            Compare all deployment options
           </a>
         </p>
       </div>

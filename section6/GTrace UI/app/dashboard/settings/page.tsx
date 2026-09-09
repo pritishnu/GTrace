@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Settings — Optimus Investigator Console",
+  title: "Settings — GTrace Investigator Console",
 };
 
 const SETTINGS = [

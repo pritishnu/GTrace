@@ -29,7 +29,7 @@ export function LoginForm() {
         </span>
         <div>
           <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-            Optimus / Investigator Console
+            GTrace / Investigator Console
           </p>
           <h1 className="font-display text-2xl leading-none">Restricted Access</h1>
         </div>

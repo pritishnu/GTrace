@@ -6,27 +6,27 @@ import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 const securityFeatures = [
   {
     icon: Shield,
-    title: "SOC 2 Type II",
-    description: "Independently audited security controls with continuous monitoring.",
+    title: "Hash-Chain Audit Log",
+    description: "Every flagged connection and key-player identification is recorded in a blockchain-inspired, tamper-evident log.",
   },
   {
     icon: Lock,
-    title: "End-to-end encryption",
-    description: "AES-256 encryption for data at rest and TLS 1.3 in transit.",
+    title: "Role-Based Access Control",
+    description: "Granular permissions ensure only authorized investigators can view, flag, or export sensitive network data.",
   },
   {
     icon: Eye,
-    title: "Zero-trust architecture",
-    description: "Every request is authenticated and authorized. No exceptions.",
+    title: "Human-in-the-Loop Design",
+    description: "GTrace surfaces leads for investigators to verify — it is a decision-support tool, not an automated accusation system.",
   },
   {
     icon: FileCheck,
-    title: "GDPR & HIPAA",
-    description: "Full compliance with data protection and healthcare regulations.",
+    title: "Full Audit Trail",
+    description: "One-click integrity verification confirms that no log entry has been altered, deleted, or inserted after the fact.",
   },
 ];
 
-const certifications = ["SOC 2", "ISO 27001", "HIPAA", "GDPR", "CCPA"];
+const certifications = ["TAMPER-EVIDENT", "HASH-CHAIN", "RBAC", "AUDIT-READY", "COURT-GRADE"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -56,7 +56,7 @@ export function SecuritySection() {
           >
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
               <span className="w-8 h-px bg-foreground/30" />
-              Security
+              Evidence Integrity
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
               Trust is
@@ -64,8 +64,8 @@ export function SecuritySection() {
               non-negotiable.
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-12">
-              Enterprise-grade security isn&apos;t optional. It&apos;s built into every layer 
-              of our platform, from infrastructure to application.
+              Every action in GTrace is logged, hashed, and verifiable. If a record 
+              has been tampered with, the system will flag it — instantly.
             </p>
 
             {/* Certifications */}

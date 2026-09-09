@@ -23,13 +23,13 @@ export function ConsoleSidebar() {
 
   return (
     <aside className="flex h-14 w-full shrink-0 flex-row items-center border-b border-sidebar-border bg-sidebar text-sidebar-foreground md:h-full md:w-56 md:flex-col md:items-stretch md:border-b-0 md:border-r">
-      <div className="hidden md:flex h-14 items-center gap-2.5 border-b border-sidebar-border px-4">
+      <Link href="/" className="hidden md:flex h-14 items-center gap-2.5 border-b border-sidebar-border px-4 hover:bg-sidebar-accent transition-colors">
         <span className="size-2 bg-highlight shadow-[0_0_10px_var(--highlight)]" aria-hidden="true" />
-        <span className="font-display text-lg leading-none">Optimus</span>
+        <span className="font-display text-lg leading-none">GTrace</span>
         <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
           OP-KESTREL
         </span>
-      </div>
+      </Link>
 
       <nav aria-label="Console" className="flex flex-1 flex-row gap-1 overflow-x-auto px-2 md:flex-col md:py-3">
         {NAV_ITEMS.map(({ href, label, icon: Icon }) => {

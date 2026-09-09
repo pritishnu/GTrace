@@ -5,38 +5,38 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "I",
-    title: "Connect your tools",
-    description: "Integrate with your existing stack in minutes. We support 200+ data sources out of the box.",
-    code: `import { optimus } from '@optimus/core'
+    title: "Ingest crime data",
+    description: "Upload FIRs, call detail records, and crime reports. GTrace parses, deduplicates, and normalizes entities automatically.",
+    code: `import { gtrace } from '@gtrace/core'
 
-optimus.connect({
-  source: 'your-database',
-  sync: true
+gtrace.ingest({
+  sources: ['FIR', 'CDR', 'Reports'],
+  deduplicate: true
 })`,
   },
   {
     number: "II",
-    title: "Build your workflow",
-    description: "Design powerful automations with our visual builder or write code directly.",
-    code: `optimus.workflow('process', {
-  trigger: 'event',
-  actions: [
-    'validate',
-    'transform', 
-    'deliver'
+    title: "AI builds the network",
+    description: "Entity extraction and relationship mapping produce a force-directed graph. Centrality algorithms surface key players and bridge nodes.",
+    code: `gtrace.analyze({
+  method: 'centrality',
+  algorithms: [
+    'degree',
+    'betweenness',
+    'eigenvector'
   ]
 })`,
   },
   {
     number: "III",
-    title: "Ship to production",
-    description: "Deploy globally with zero configuration. Your app goes live in under 30 seconds.",
-    code: `optimus.deploy({
-  target: 'production',
-  regions: 'auto'
+    title: "Investigate & act",
+    description: "Explore the interactive graph, inspect entity details, flag connections, and export audit-ready reports — all from one workspace.",
+    code: `gtrace.export({
+  format: 'report',
+  auditLog: true
 })
 
-// Deployed to 12 regions`,
+// Integrity: verified ✓`,
   },
 ];
 
@@ -88,7 +88,7 @@ export function HowItWorksSection() {
         <div className="mb-16 lg:mb-24">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-background/50 mb-6">
             <span className="w-8 h-px bg-background/30" />
-            Process
+            Workflow
           </span>
           <h2
             className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${
@@ -97,7 +97,7 @@ export function HowItWorksSection() {
           >
             Three steps.
             <br />
-            <span className="text-background/50">Infinite possibilities.</span>
+            <span className="text-background/50">From raw data to actionable intelligence.</span>
           </h2>
         </div>
 
@@ -151,7 +151,7 @@ export function HowItWorksSection() {
                   <div className="w-3 h-3 rounded-full bg-background/20" />
                   <div className="w-3 h-3 rounded-full bg-background/20" />
                 </div>
-                <span className="text-xs font-mono text-background/40">workflow.ts</span>
+                <span className="text-xs font-mono text-background/40">analysis.ts</span>
               </div>
 
               {/* Code content */}

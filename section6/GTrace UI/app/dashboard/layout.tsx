@@ -7,7 +7,7 @@ import { ConsoleSidebar } from "@/components/investigator/console-sidebar";
 import { ConsoleTopbar } from "@/components/investigator/console-topbar";
 
 export const metadata: Metadata = {
-  title: "Investigator Console — Optimus",
+  title: "Investigator Console — GTrace",
   description: "Network analysis console for case OP-KESTREL.",
 };
 

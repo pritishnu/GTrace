@@ -3,18 +3,18 @@
 import { useEffect, useState, useRef } from "react";
 
 const integrations = [
-  { name: "GitHub", category: "Version Control" },
-  { name: "Slack", category: "Communication" },
-  { name: "Stripe", category: "Payments" },
-  { name: "PostgreSQL", category: "Database" },
-  { name: "Redis", category: "Cache" },
-  { name: "AWS", category: "Cloud" },
-  { name: "MongoDB", category: "Database" },
-  { name: "Vercel", category: "Hosting" },
-  { name: "Figma", category: "Design" },
-  { name: "Linear", category: "Project Management" },
-  { name: "Notion", category: "Documentation" },
-  { name: "OpenAI", category: "AI/ML" },
+  { name: "FIR Records", category: "Crime Data" },
+  { name: "CDR Analysis", category: "Telecom" },
+  { name: "Witness Statements", category: "Testimonials" },
+  { name: "Geolocation Data", category: "Spatial" },
+  { name: "Social Network", category: "OSINT" },
+  { name: "Financial Records", category: "Banking" },
+  { name: "Vehicle Registry", category: "Transport" },
+  { name: "Court Records", category: "Legal" },
+  { name: "Graph Engine", category: "Analysis Module" },
+  { name: "Centrality Algo", category: "Analysis Module" },
+  { name: "Hash-Chain Log", category: "Audit Module" },
+  { name: "Report Export", category: "Output" },
 ];
 
 export function IntegrationsSection() {
@@ -44,16 +44,16 @@ export function IntegrationsSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Integrations
+            Data Sources & Modules
             <span className="w-8 h-px bg-foreground/30" />
           </span>
           <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-6">
-            Works with everything
+            Ingests every source
             <br />
-            you already use.
+            an investigator needs.
           </h2>
           <p className="text-xl text-muted-foreground">
-            200+ pre-built integrations. Connect your entire stack in minutes.
+            FIRs, call records, geolocation, financial data, and more — unified into a single network graph.
           </p>
         </div>
 

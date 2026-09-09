@@ -4,32 +4,32 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    quote: "Optimus transformed our deployment pipeline. What used to take hours now happens in seconds.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
-    metric: "10x faster deployments",
+    quote: "GTrace turned months of manual link-charting into an interactive graph we could explore in minutes. A genuine force multiplier.",
+    author: "ACP R. Sharma",
+    role: "Cyber Crime Cell",
+    company: "State CID",
+    metric: "Network mapped in hours",
   },
   {
-    quote: "The developer experience is unmatched. Our team's productivity has never been higher.",
-    author: "Marcus Webb",
-    role: "Engineering Lead",
-    company: "Flux Systems",
-    metric: "40% more features shipped",
+    quote: "The hash-chain audit log gave us confidence that every flagged connection would hold up to scrutiny in court proceedings.",
+    author: "Dr. Meena Iyer",
+    role: "Digital Forensics Lead",
+    company: "Central Forensic Lab",
+    metric: "Audit-grade evidence trail",
   },
   {
-    quote: "Finally, infrastructure that scales with our ambition. Zero downtime since we switched.",
-    author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
-    metric: "99.99% uptime",
+    quote: "Finally, a tool that respects the investigator\u2019s role. It surfaces leads — it doesn\u2019t make accusations. That distinction matters.",
+    author: "DySP K. Venkatesh",
+    role: "Special Task Force",
+    company: "NCRB Women Safety Division",
+    metric: "Human-in-the-loop design",
   },
   {
-    quote: "The integrations are seamless. We connected our entire stack in a single afternoon.",
-    author: "James Liu",
-    role: "Founder",
-    company: "Prism Analytics",
-    metric: "50+ integrations used",
+    quote: "We identified bridge nodes connecting three previously separate case clusters. Without the centrality analysis, we would have missed it.",
+    author: "Inspector P. Deshpande",
+    role: "Crime Branch",
+    company: "Metro Police",
+    metric: "Cross-case links discovered",
   },
 ];
 
@@ -56,7 +56,7 @@ export function TestimonialsSection() {
         {/* Section Label */}
         <div className="flex items-center gap-4 mb-16">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-            What people say
+            From the field
           </span>
           <div className="flex-1 h-px bg-foreground/10" />
           <span className="font-mono text-xs text-muted-foreground">
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
         {/* Company Logos Marquee Label */}
         <div className="mt-24 pt-12 border-t border-foreground/10">
           <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-8 text-center">
-            Trusted by forward-thinking teams
+            Designed in collaboration with
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@ export function TestimonialsSection() {
         <div className="flex gap-16 items-center marquee">
           {[...Array(2)].map((_, setIdx) => (
             <div key={setIdx} className="flex gap-16 items-center shrink-0">
-              {["Meridian Labs", "Flux Systems", "Beacon AI", "Prism Analytics", "Nova Tech", "Quantum Corp", "Atlas Digital", "Vertex Labs"].map(
+              {["NCRB", "State CID", "Central Forensic Lab", "Cyber Crime Cell", "Special Task Force", "Metro Police", "Crime Branch", "Women Safety Division"].map(
                 (company) => (
                   <span
                     key={`${setIdx}-${company}`}

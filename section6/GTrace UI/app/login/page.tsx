@@ -3,7 +3,7 @@ import { AnimatedSphere } from "@/components/landing/animated-sphere";
 import { LoginForm } from "@/components/investigator/login-form";
 
 export const metadata: Metadata = {
-  title: "Sign In — Optimus Investigator Console",
+  title: "Sign In — GTrace Investigator Console",
   description: "Restricted access. Authorized investigators only.",
 };
 

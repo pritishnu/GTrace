@@ -5,26 +5,26 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Instant Deployment",
-    description: "Push to production in seconds. Our edge network ensures your applications load instantly, anywhere in the world.",
-    visual: "deploy",
-  },
-  {
-    number: "02",
-    title: "AI-Native Workflows",
-    description: "Build intelligent applications with built-in AI capabilities. From inference to training, everything scales automatically.",
+    title: "Force-Directed Network Graph",
+    description: "An Obsidian-style interactive graph view. Entities appear as nodes, relationships as edges — with node size and color reflecting importance within the criminal network.",
     visual: "ai",
   },
   {
-    number: "03",
-    title: "Real-time Collaboration",
-    description: "Work together seamlessly. Live preview, instant feedback, and version control that actually makes sense.",
+    number: "02",
+    title: "Entity Detail Panel",
+    description: "Click any node to open a slide-in drawer with full details on that person, location, or organization — including linked FIRs, call records, and known associates.",
     visual: "collab",
   },
   {
+    number: "03",
+    title: "Centrality-Based Key Player ID",
+    description: "Automatically surfaces the most connected individuals and the bridge entities linking separate clusters. Investigators see who matters most — instantly.",
+    visual: "deploy",
+  },
+  {
     number: "04",
-    title: "Enterprise Security",
-    description: "Bank-grade encryption, SOC 2 compliance, and granular access controls. Your data stays yours.",
+    title: "Tamper-Evident Audit Log",
+    description: "A hash-chain-based log (blockchain-inspired) that records every flagged connection and key-player identification, with one-click integrity verification.",
     visual: "security",
   },
 ];
@@ -330,9 +330,9 @@ export function FeaturesSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Everything you need.
+            Core capabilities.
             <br />
-            <span className="text-muted-foreground">Nothing you don&apos;t.</span>
+            <span className="text-muted-foreground">Built for investigators.</span>
           </h2>
         </div>
 

@@ -5,52 +5,49 @@ import { Copy, Check } from "lucide-react";
 
 const codeExamples = [
   {
-    label: "Install",
-    code: `npm install @optimus/sdk
+    label: "Ingest",
+    code: `import { GTrace } from '@gtrace/sdk'
 
-# or
-yarn add @optimus/sdk
-pnpm add @optimus/sdk`,
-  },
-  {
-    label: "Initialize",
-    code: `import { Optimus } from '@optimus/sdk'
-
-const optimus = new Optimus({
-  apiKey: process.env.OPTIMUS_KEY
+const gt = new GTrace({
+  caseId: process.env.CASE_ID
 })`,
   },
   {
-    label: "Deploy",
-    code: `const app = await optimus.deploy({
-  name: 'my-app',
-  region: 'auto',
-  scaling: {
-    min: 1,
-    max: 100
-  }
+    label: "Analyze",
+    code: `const network = await gt.buildGraph({
+  sources: ['FIR', 'CDR'],
+  centrality: 'betweenness',
+  clustering: true
 })
 
-console.log('Live at:', app.url)`,
+console.log('Key players:', network.top(5))`,
+  },
+  {
+    label: "Verify",
+    code: `const audit = await gt.auditLog.verify()
+
+console.log('Integrity:', audit.valid)
+// Integrity: true ✓
+// Chain length: 847 entries`,
   },
 ];
 
 const features = [
   { 
-    title: "TypeScript native", 
-    description: "Full type safety with auto-generated types."
+    title: "Decision-support first", 
+    description: "Surfaces leads, never accusations."
   },
   { 
-    title: "Zero config", 
-    description: "Sensible defaults that just work."
+    title: "Graph-native analysis", 
+    description: "Force-directed layout with centrality metrics."
   },
   { 
-    title: "Edge-ready", 
-    description: "Runs anywhere: Node, Deno, Bun, browsers."
+    title: "Audit-ready output", 
+    description: "Hash-chain verified, export-ready reports."
   },
   { 
-    title: "12KB gzipped", 
-    description: "Lightweight with zero dependencies."
+    title: "Human-in-the-loop", 
+    description: "Every flagged entity requires investigator review."
   },
 ];
 
@@ -119,16 +116,16 @@ export function DevelopersSection() {
           >
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
               <span className="w-8 h-px bg-foreground/30" />
-              For developers
+              For investigators
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
-              Built by devs.
+              Built for the field.
               <br />
-              <span className="text-muted-foreground">For devs.</span>
+              <span className="text-muted-foreground">Not the lab.</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              A thoughtfully designed SDK that gets out of your way. 
-              Ship faster with intuitive APIs and exceptional documentation.
+              A decision-support system designed around the investigator’s workflow. 
+              GTrace surfaces patterns and connections — humans make the calls.
             </p>
             
             {/* Features */}

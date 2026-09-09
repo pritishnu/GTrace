@@ -43,7 +43,7 @@ function buildPdf(lines: string[]): Blob {
 export function exportInvestigationReport() {
   const scored = [...getScoredNodes()].sort((a, b) => b.degree - a.degree).slice(0, 12);
   const lines = [
-    "OPTIMUS INVESTIGATOR CONSOLE - NETWORK ANALYSIS REPORT",
+    "GTRACE INVESTIGATOR CONSOLE - NETWORK ANALYSIS REPORT",
     "Case: OP-KESTREL    Generated: " + new Date().toISOString(),
     "Classification: RESTRICTED",
     "",

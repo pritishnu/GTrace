@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { FileText, Lock } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Reports — Optimus Investigator Console",
+  title: "Reports — GTrace Investigator Console",
 };
 
 const REPORTS = [

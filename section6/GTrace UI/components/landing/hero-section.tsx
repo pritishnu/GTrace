@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { AnimatedSphere } from "./animated-sphere";
+import Link from "next/link";
 
-const words = ["create", "build", "scale", "ship"];
+const words = ["trace", "map", "link", "expose"];
 
 export function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -64,7 +65,7 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground">
             <span className="w-8 h-px bg-foreground/30" />
-            The platform for modern teams
+            AI-powered criminal network analysis — SIH 2026 · PS 26189 · NCRB
           </span>
         </div>
         
@@ -75,9 +76,9 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block">The platform</span>
+            <span className="block">Hidden networks</span>
             <span className="block">
-              to{" "}
+              {" "}
               <span className="relative inline-block">
                 <span 
                   key={wordIndex}
@@ -97,6 +98,7 @@ export function HeroSection() {
                 </span>
                 <span className="absolute -bottom-2 left-0 right-0 h-3 bg-foreground/10" />
               </span>
+              d.
             </span>
           </h1>
         </div>
@@ -108,8 +110,8 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Your toolkit to stop configuring and start innovating. 
-            Securely build, deploy, and scale the best experiences.
+            GTrace ingests FIRs, call records, and crime reports — then surfaces
+            the hidden relationships investigators need to see.
           </p>
           
           {/* CTAs */}
@@ -118,20 +120,24 @@ export function HeroSection() {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            <Button 
-              size="lg" 
-              className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
-            >
-              Start free trial
-              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
-            >
-              Watch demo
-            </Button>
+            <Link href="/dashboard">
+              <Button 
+                size="lg" 
+                className="bg-foreground hover:bg-foreground/90 text-background px-8 h-14 text-base rounded-full group"
+              >
+                Launch Dashboard
+                <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+            <Link href="/dashboard">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
+              >
+                View Demo
+              </Button>
+            </Link>
           </div>
         </div>
         
@@ -147,10 +153,10 @@ export function HeroSection() {
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex gap-16">
               {[
-                { value: "20 days", label: "saved on builds", company: "NETFLIX" },
-                { value: "98%", label: "faster deployment", company: "STRIPE" },
-                { value: "300%", label: "throughput increase", company: "LINEAR" },
-                { value: "6x", label: "faster to ship", company: "NOTION" },
+                { value: "Graph", label: "network visualization", company: "FORCE-DIRECTED" },
+                { value: "Audit", label: "tamper-evident logs", company: "HASH-CHAIN" },
+                { value: "Key", label: "player identification", company: "CENTRALITY" },
+                { value: "FIR", label: "data integration", company: "CDR · REPORTS" },
               ].map((stat) => (
                 <div key={`${stat.company}-${i}`} className="flex items-baseline gap-4">
                   <span className="text-4xl lg:text-5xl font-display">{stat.value}</span>
